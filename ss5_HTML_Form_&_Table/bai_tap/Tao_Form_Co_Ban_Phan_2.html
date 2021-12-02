@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đăng ký học viên</title>
+</head>
+<body>
+
+<form>
+    <h2 style="background-color: aquamarine;
+        text-align: center; color: blue; width: 350px">Đăng kí học viên</h2>
+    <div>
+        <label style="color: blue" for="name">Họ và tên</label>
+        <div style="padding-left: 95px">
+            <input type="text" id="name" name="yourname">
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <label style="color: blue" for="date">Ngày sinh</label>
+        <div style="padding-left: 95px">
+            <input type="text" id="date" name="date">
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <label style="color: blue" for="address">Giới tính</label>
+        <div style="padding-left: 95px">
+            <input type="radio" name="gender"> Nam
+            <input type="radio" name="gender"> Nữ
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <label style="color: blue; ">Địa chỉ</label>
+        <div style="padding-left: 95px">
+            <textarea width="350px" height="200px" id="address" name="address"></textarea>
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <label style="color: blue" for="class">Lớp</label>
+        <div style="padding-left: 95px">
+            <select id="class" name="class">
+                <option>--Chọn lớp--</option>
+                <option>C721G1</option>
+                <option>C821G1</option>
+                <option>C921G1</option>
+                <option>C1021G1</option>
+                <option>C1121G1</option>
+            </select>
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <label style="color: blue" for="email">Email</label>
+        <div style="padding-left: 95px">
+            <input type="text" id="email" name="email">
+        </div>
+    </div>
+    <br>
+
+    <div>
+        <label style="color: blue" for="Email">Số điện thoại</label>
+        <div style="padding-left: 95px">
+            <input type="number" id="phone" name="phone">
+        </div>
+    </div>
+    <br>
+
+    <div style="padding-left: 110px">
+        <input type="submit" value="Đăng ký">
+        <input type="reset" value="Nhập lại">
+    </div>
+</form>
+
+</body>
+</html>
