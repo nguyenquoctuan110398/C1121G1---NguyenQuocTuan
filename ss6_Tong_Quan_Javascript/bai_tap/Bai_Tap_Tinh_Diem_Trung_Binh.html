@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính điểm trung bình</title>
+</head>
+<body>
+
+<div>
+    <label>Điểm toán: </label>
+    <input type="text" id="toan">
+    <br><br>
+</div>
+
+<div style="padding-left: 15px">
+    <label>Điểm lý: </label>
+    <input type="text" id="ly">
+    <br><br>
+</div>
+
+<div style="padding-left: 5px">
+    <label>Điểm hóa: </label>
+    <input type="text" id="hoa">
+    <br><br>
+</div>
+<div style="padding-left: 120px">
+    <button onclick="TinhTrungBinh()">Tính avg</button>
+    <br><br>
+</div>
+
+<div style="padding-left: 8px">
+    <label>Điểm TB: </label>
+    <input type="text" id="diemtb">
+    <br><br>
+</div>
+
+</body>
+</html>
+
+<script>
+    function TinhTrungBinh() {
+        let t = document.getElementById("toan").value;
+        t = parseFloat(t);
+        console.log(t);
+        let l = document.getElementById("ly").value;
+        l = parseFloat(l)
+        console.log(l);
+        let h = document.getElementById("hoa").value;
+        h = parseFloat(h)
+        console.log(h);
+        let avg = (t + l + h) / 3;
+        console.log(avg);
+        avg = Math.round(avg * 100) / 100;
+        document.getElementById("diemtb").value = avg;
+    }
+</script>

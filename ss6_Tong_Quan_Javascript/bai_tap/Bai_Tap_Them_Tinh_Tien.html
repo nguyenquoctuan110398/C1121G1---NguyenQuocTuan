@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>JS OVERVIEW</h1>
+<div>
+
+        <label>Nhập số tiền phải thanh toán:</label>
+        <input type="number" id="bill">
+        <br>
+
+        <label style="padding-left: 88px">Nhập số người:</label>
+        <input type="number" id="amount">
+        <br><br>
+
+        <div style="padding-left: 250px">
+            <button onclick="hello()">Click</button>
+        </div>
+        <h1 id="display">Kết quả: </h1>
+</div>
+</body>
+</html>
+
+<script>
+
+   function hello() {
+       let bill = document.getElementById("bill").value;
+       console.log(bill);
+       let amount = document.getElementById("amount").value;
+       console.log(amount);
+       let avg = bill / amount;
+       console.log(avg);
+       document.getElementById("display").innerText = avg;
+   }
+
+</script>
