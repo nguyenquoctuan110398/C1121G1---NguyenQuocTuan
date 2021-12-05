@@ -24,7 +24,7 @@
     <br><br>
 </div>
 <div style="padding-left: 120px">
-    <button onclick="TinhTrungBinh()">Tính avg</button>
+    <button onclick="tinhTrungBinh()">Tính avg</button>
     <br><br>
 </div>
 
@@ -38,17 +38,17 @@
 </html>
 
 <script>
-    function TinhTrungBinh() {
-        let t = document.getElementById("toan").value;
-        t = parseFloat(t);
-        console.log(t);
-        let l = document.getElementById("ly").value;
-        l = parseFloat(l)
-        console.log(l);
-        let h = document.getElementById("hoa").value;
-        h = parseFloat(h)
-        console.log(h);
-        let avg = (t + l + h) / 3;
+    function tinhTrungBinh() {
+        let diemToan = document.getElementById("toan").value;
+        diemToan = parseFloat(diemToan);
+        console.log(diemToan);
+        let diemLy = document.getElementById("ly").value;
+        diemLy = parseFloat(diemLy)
+        console.log(diemLy);
+        let diemHoa = document.getElementById("hoa").value;
+        diemHoa = parseFloat(diemHoa)
+        console.log(diemHoa);
+        let avg = (diemToan + diemLy + diemHoa) / 3;
         console.log(avg);
         avg = Math.round(avg * 100) / 100;
         document.getElementById("diemtb").value = avg;
