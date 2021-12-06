@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính S và P</title>
+</head>
+<body>
+<p>Bán kính: <input id="bankinh" type="number"></p>
+
+<button type="button" onclick="tinhDienTichVaChuVi()">In kết quả</button>
+<p>Diện tich: <input id="dientich" type="number"></p>
+<p>Chu vi: <input id="chuvi" type="number"></p>
+</body>
+</html>
+
+<script>
+    function tinhDienTichVaChuVi() {
+        let r = document.getElementById("bankinh").value;
+        r = parseFloat(r);
+
+        S = 3.14*r*r;
+        P= 3.14*2*r;
+
+        document.getElementById("dientich").value = S;
+        document.getElementById("chuvi").value = P;
+    }
+</script>

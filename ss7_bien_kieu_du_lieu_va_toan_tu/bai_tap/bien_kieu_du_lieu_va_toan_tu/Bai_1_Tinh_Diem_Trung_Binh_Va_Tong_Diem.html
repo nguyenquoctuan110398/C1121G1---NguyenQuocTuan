@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính ĐTB và tổng</title>
+</head>
+<body>
+<p>Điểm lý: <input id="ly" type="number"></p>
+<p>Điểm hóa: <input id="hoa" type="number"></p>
+<p>Điểm sinh: <input id="sinh" type="number"></p>
+<button type="button" onclick="tinhTongVaDiemTrungBinh()">In kết quả</button>
+</body>
+</html>
+
+<script>
+    function tinhTongVaDiemTrungBinh() {
+        let ly = document.getElementById("ly").value;
+        ly = parseFloat(ly);
+        let hoa = document.getElementById("hoa").value;
+        hoa = parseFloat(hoa);
+        let sinh = document.getElementById("sinh").value;
+        sinh = parseFloat(sinh);
+
+        tong = ly + hoa + sinh;
+        avg = tong / 3;
+        avg = Math.round(avg * 100) / 100;
+
+        document.write("Tổng điểm: " + tong );
+        document.write("<br>");
+        document.write("Điểm trung bình: " + avg);
+    }
+</script>

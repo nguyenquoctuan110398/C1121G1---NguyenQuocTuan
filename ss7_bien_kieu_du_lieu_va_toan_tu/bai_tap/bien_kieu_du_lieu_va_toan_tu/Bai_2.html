@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi độ</title>
+</head>
+<body>
+<p>Độ C: <input id="doC" type="number"></p>
+
+<button type="button" onclick="doiNhietDo()">In kết quả</button>
+<p>Độ P: <input id="doF" type="number"></p>
+</body>
+</html>
+
+<script>
+    function doiNhietDo() {
+        let doC = document.getElementById("doC").value;
+        doC = parseFloat(doC);
+
+        let doF = (doC*9+32)/5;
+
+        document.getElementById("doF").value = doF;
+    }
+</script>

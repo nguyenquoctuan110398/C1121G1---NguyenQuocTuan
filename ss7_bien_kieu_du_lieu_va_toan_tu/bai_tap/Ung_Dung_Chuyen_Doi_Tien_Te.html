@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h2>Ứng dụng chuyển đổi tiền tệ</h2>
+<table style="border-collapse: collapse" width="300px">
+    <tr>
+        <th>Amout</th>
+        <th>From Currency</th>
+        <th>To Currency</th>
+        <th></th>
+    </tr>
+
+    <tr>
+        <td><input id="amount"></td>
+        <td><select id="from">
+            <option value="vnd">VND</option>
+            <option value="usd">USD</option>
+        </select></td>
+        <td><select id="to">
+            <option value="vnd">VND</option>
+            <option value="usd">USD</option>
+        </select></td>
+        <td>
+            <button onclick="chuyenDoiTienTe()">Convert</button>
+        </td>
+    </tr>
+
+</table>
+<p>
+<h3 id="display">Kết quả: </h3></p>
+
+</body>
+</html>
+
+<script>
+    function chuyenDoiTienTe() {
+        let amount = document.getElementById("amount").value;
+        let from = document.getElementById("from").value;
+        let to = document.getElementById("to").value;
+
+        if (from === "vnd" && to === "usd") {
+            let tien = amount / 23000;
+            tien = Math.round(tien * 100) / 100;
+            document.getElementById("display").innerHTML = tien;
+        } else if (from === "usd" && to === "vnd") {
+            let tien = amount * 23000;
+            document.getElementById("display").innerHTML = tien;
+        } else {
+            document.getElementById("display").innerHTML = amount;
+        }
+    }
+</script>
