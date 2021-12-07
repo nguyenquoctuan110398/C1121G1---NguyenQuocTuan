@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<img id="traiBong" src="https://sasukegym.vn/wp-content/uploads/2019/06/qua-bong-da-thi-dau-chat-luong.jpg">
+<p>kích vào nút để di chuyển</p>
+<form>
+    <button type="reset" onclick="remove()">click me</button>
+</form>
+<script>
+    // // let imgobj = null
+     function init() {
+    //
+    //     // imgobj = document.getElementById("traiBong")
+    //     // imgobj.style.position = "relative";
+    //     // imgobj.style.left = "0px";
+     }
+    function remove(){
+        let imgobj = null;
+        imgobj = document.getElementById("traiBong");
+        imgobj.style.position = "relative";
+        imgobj.style.left = "0px";
+        imgobj.style.left = parseInt(imgobj.style.left)+10+'px';
+    }
+    window.onload=init;
+</script>
+</body>
+</html>
