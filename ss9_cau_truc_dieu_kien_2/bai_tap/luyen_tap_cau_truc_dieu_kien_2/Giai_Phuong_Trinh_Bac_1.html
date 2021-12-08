@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Phuong trinh bac 1 co dang ax + b = c;
+    let a = prompt("Nhập a: ");
+    a = parseFloat(a);
+    let b = prompt("Nhập b: ");
+    b = parseFloat(b);
+    let c = prompt("Nhập c: ");
+    c = parseFloat(c);
+    if (a == 0) {
+        alert("Phương trình vô nghiệm");
+    } else {
+        x = (c - b) / a;
+        x = Math.round(x*100)/100;
+        alert("Phương trình có nghiệm là : " + x);
+    }
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soPhutGoi = prompt("Nhập số phút gọi: ");
+    soPhutGoi = parseFloat(soPhutGoi);
+    if (soPhutGoi <= 50) {
+        tienCuoc = 600 * soPhutGoi;
+        alert("Số tiền cước là: " + tienCuoc);
+    } else if (soPhutGoi <= 200) {
+        tienCuoc = 600 * 50 + 400 * (soPhutGoi - 50);
+        alert("Số tiền cước là: " + tienCuoc);
+    } else {
+        tienCuoc = 600 * 50 + 400 * 150 + 200 *(soPhutGoi-200);
+        alert("Số tiền cước là: " + tienCuoc);
+    }
+</script>
+</body>
+</html>

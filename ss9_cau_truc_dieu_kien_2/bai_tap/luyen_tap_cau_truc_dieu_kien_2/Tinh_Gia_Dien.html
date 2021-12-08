@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let soChuDien = prompt("Nhập số chữ điện đã dùng: ");
+    soChuDien = parseFloat(soChuDien);
+    if (soChuDien<=0) {
+        alert("Nhập sai!")
+    } else if (soChuDien <= 50) {
+        giaTien = soChuDien * 1678;
+        alert("Số tiền cần trà là: " + giaTien);
+    } else if (soChuDien <= 100) {
+        giaTien = 50 * 1678 + (soChuDien - 50) * 1734;
+        alert("Số tiền cần trà là: " + giaTien);
+    } else if (soChuDien <= 200) {
+        giaTien = 50 * 1678 + 50 * 1734 + (soChuDien - 100) * 2014;
+        alert("Số tiền cần trà là: " + giaTien);
+    } else {
+        giaTien = 50 * 1678 + 50 * 1734 + 100 * 2014 + (soChuDien - 200) * 2536;
+        alert("Số tiền cần trà là: " + giaTien);
+    }
+    // var x = [1,2,4];
+    // console.log(x);
+</script>
+</body>
+</html>

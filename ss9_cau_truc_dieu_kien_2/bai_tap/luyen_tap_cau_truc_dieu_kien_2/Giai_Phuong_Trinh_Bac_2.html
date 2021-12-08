@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    //Phương trình bậc 2 có dạng a*x^2 + bx + c = 0
+    let a = prompt("Nhập a: ");
+    a = parseFloat(a);
+    let b = prompt("Nhập b: ");
+    b = parseFloat(b);
+    let c = prompt("Nhập c: ");
+    c = parseFloat(c);
+    delta = b * b - 4 * a * c;
+    can2Delta = Math.sqrt(delta);
+    can2Delta = Math.round(can2Delta*100)/100
+
+    if (delta < 0) {
+        alert("Phương trình vô nghiệm");
+    } else if (delta == 0) {
+        x = -b / (2 * a);
+        alert("Phương trình có nghiệm kép : " + x);
+    } else {
+        x1 = (-b + can2Delta) / (2 * a);
+        x2 = (-b - can2Delta) / (2 * a);
+        alert("Phương trình có 2 nghiệm: x1 = " + x1 + " và x2 = " + x2)
+    }
+</script>
+</body>
+</html>

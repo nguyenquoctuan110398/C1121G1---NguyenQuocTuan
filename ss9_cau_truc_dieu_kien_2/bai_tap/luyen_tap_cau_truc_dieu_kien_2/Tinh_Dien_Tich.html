@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt("Nhập cạnh a: ");
+    a = parseFloat(a);
+    let b = prompt("Nhập cạnh b: ");
+    b = parseFloat(b);
+    let c = prompt("Hình cần tính diện tích: ");
+
+    if (c == "Vuông") {
+        S = a * a;
+        alert("Diện tích hình " + c + " là: " + S);
+    } else if (c == "Chữ nhật") {
+        S = a * b;
+        alert("Diện tích hình " + c + " là: " + S);
+    } else if (c == "Tam giác vuông") {
+        S = (a * b) / 2;
+        alert("Diện tích hình " + c + " là: " + S);
+    } else {
+        alert("Hình không hợp lệ");
+    }
+</script>
+</body>
+</html>

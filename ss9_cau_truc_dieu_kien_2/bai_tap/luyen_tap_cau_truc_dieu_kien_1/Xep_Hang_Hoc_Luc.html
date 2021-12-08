@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let diemBaiTap = prompt("Nhập điểm bài tập: ");
+    diemBaiTap = parseFloat(diemBaiTap);
+    let diemGiuaKy = prompt("Nhập điểm giữa kỳ: ");
+    diemGiuaKy = parseFloat(diemGiuaKy);
+    let diemCuoiKy = prompt("Nhập điểm cuối kỳ: ");
+    diemCuoiKy = parseFloat(diemCuoiKy);
+    tongDiem = (diemBaiTap + diemGiuaKy) * 0.2 + diemGiuaKy * 0.6;
+    if (tongDiem >= 8.5) {
+        alert("Tổng điểm là " + tongDiem + ": Ban được loại A");
+    } else if (tongDiem >= 7) {
+        alert("Tổng điểm là " + tongDiem + ": Ban được loại B");
+    } else if (tongDiem >= 5.5) {
+        alert("Tổng điểm là " + tongDiem + ": Ban được loại C");
+    } else if (tongDiem >= 4) {
+        alert("Tổng điểm là " + tongDiem + ": Ban được loại D");
+    } else {
+        alert("Tổng điểm là " + tongDiem + ": Ban được loại F");
+    }
+</script>
+</body>
+</html>

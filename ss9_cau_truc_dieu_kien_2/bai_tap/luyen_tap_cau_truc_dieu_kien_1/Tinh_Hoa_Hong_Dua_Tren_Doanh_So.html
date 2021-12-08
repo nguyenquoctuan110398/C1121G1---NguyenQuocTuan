@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let doanhSo = prompt("Nhập doanh số: ");
+    doanhSo = parseInt(doanhSo);
+    if (doanhSo < 10000) {
+        tienHoaHong = doanhSo * 0.01;
+    } else if (doanhSo < 40000) {
+        tienHoaHong = doanhSo * 0.05;
+        alert("Bạn nhận được tiền hoa hồng là: " + tienHoaHong + " USD");
+    } else if (doanhSo < 100000) {
+        tienHoaHong = doanhSo * 0.07;
+        alert("Bạn nhận được tiền hoa hồng là: " + tienHoaHong + " USD");
+    } else {
+        tienHoaHong = doanhSo * 0.1;
+        alert("Bạn nhận được tiền hoa hồng là: " + tienHoaHong + " USD")
+    }
+</script>
+</body>
+</html>
