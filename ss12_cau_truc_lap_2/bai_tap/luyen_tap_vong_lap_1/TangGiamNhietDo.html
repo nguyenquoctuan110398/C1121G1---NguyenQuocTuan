@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let nhietDo = null;
+    do {
+        nhietDo = prompt('Nhập nhiệt độ: ');
+        nhietDo = parseInt(nhietDo);
+
+        if (nhietDo < 20) {
+            alert("Mời bạn tăng nhiệt độ!");
+        } else if (nhietDo > 100) {
+            alert("Mời bạn giảm nhiệt độ!");
+        }
+
+    } while (nhietDo < 20 || nhietDo > 100);
+    alert('Nhiệt độ đã phù hợp!')
+
+    // let value = null;
+    // do {
+    //     value = prompt("Nhập vào nhiệt độ: ");
+    //     if (value <20) {
+    //         alert("Mời bạn tăng nhiệt độ")
+    //     } else if (value>100) {
+    //         alert("Mời bạn giảm nhiệt đồ")
+    //     }
+    // } while (value < 20 || value > 100)
+    // alert("Nhiệt độ đã phù hợp!")
+
+    // while (nhietDo < 20 || nhietDo > 100) {
+    //     let nhietDo = prompt('Nhập nhiệt độ: ');
+    //     nhietDo = parseInt(nhietDo);
+    //     if (nhietDo < 20) {
+    //         alert('Mời bạn tăng nhiệt độ')
+    //     } else if (nhietDo > 100) {
+    //         alert('Mời bạn giảm nhiệt độ')
+    //     }
+    // }
+    // alert("Nhiệt độ đã phù hợp!")
+</script>
+</body>
+</html>
