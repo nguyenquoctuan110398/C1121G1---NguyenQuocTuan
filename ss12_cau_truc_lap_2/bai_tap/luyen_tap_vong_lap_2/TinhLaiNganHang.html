@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // lãi suất mẹ đẻ lãi suất còn.
+    //Vd: tongTinGui =100; lãi suất 10% /thang; gửi 2 tháng
+    // +t1: lai =100*0.1 =10 => tongTien = 110
+    // +t2 : lai 110*0.1 =>11 => tong tien 121;
+    let tongTien = parseInt(prompt("nhập tiền gửi"));
+    let laiSuat = parseInt(prompt("nhập lãi suất tháng"));
+    let soThangGui = parseInt(prompt("nhập số tháng gửi"));
+    let tienLai=0;
+    for (let i=1;i<=soThangGui;i++){
+        tienLai+=tongTien*laiSuat/100;
+        tongTien +=tongTien*laiSuat/100;
+    }
+    alert("tổng tiền sau khi rút" + tongTien)
+    alert("tien lãi" + tienLai)
+</script>
+</body>
+</html>

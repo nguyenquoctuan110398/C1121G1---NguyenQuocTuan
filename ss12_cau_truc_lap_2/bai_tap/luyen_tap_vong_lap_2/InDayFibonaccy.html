@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>In 20 số trong dãy fibonaccy</title>
+    <title>Title</title>
 </head>
 <body>
 <p id="demo"></p>
@@ -10,8 +10,9 @@
     let a = 0;
     let b = 1;
     let c = 1;
+    let count = prompt("Nhập vào số lượng dãy Fibonaccy cần in: ");
     text = "0, 1, 1";
-    for (let i = 1; i <= 17; i++) {
+    for (let i = 1; i <= (count-3); i++) {
         a = b;
         b = c;
         c = a + b;

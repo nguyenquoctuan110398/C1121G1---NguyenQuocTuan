@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let rong = prompt('Nhập độ rộng hình chữ nhật cần vẽ');
+    rong = parseInt(rong);
+    let dai = prompt('Nhập độ dài hình chữ nhật cần vẽ');
+    dai = parseInt(dai);
+    for (let i = 0; i < dai; i++) {
+        for (let j = 0; j < rong; j++) {
+            if (i == 0 || j == 0 || i == (dai - 1) || j == (rong - 1)) {
+                document.write('*');
+            } else {
+                document.write('&nbsp&nbsp');
+            }
+        }
+        document.write('<br>')
+    }
+</script>
+</body>
+</html>

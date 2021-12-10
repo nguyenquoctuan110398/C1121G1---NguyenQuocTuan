@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    text = "";
+    for (let i = 1; i <= 5; i++) {
+        text += "<br>";
+        for (let j = 1; j <= i; j++) {
+            text += "*";
+        }
+    }
+    document.write(text + "<br>");
+
+    text1 = "";
+    for (let i = 5; i >= 1; i--) {
+        text1 += "<br>";
+        for (let j = 1; j <= i; j++) {
+            text1 += "*";
+        }
+    }
+    document.write(text1 + '<br>' + '<br>');
+
+    // text3 = "";
+    // for (let j = 1; j <= 5; j++) {
+    //     text3 += "*";
+    //     for (let i = 1; i <= 5; i++) {
+    //         text3 += "a";
+    //         // for (let j = 1; j <= i; j++) {
+    //
+    //         // }
+    //     }
+    //
+    // }
+
+    text3 = "";
+    for (let i = 1; i <= 5; i++) {
+        for (let j = i; j <= 4; j++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (let j = 1; j <= i; j++) {
+            document.write('*');
+        }
+        document.write('<br>');
+    }
+    document.write('<br>');
+
+    for (let i = 1; i <= 5; i++) {
+        for (let j = 1; j < i; j++) {
+            document.write('&nbsp&nbsp');
+        }
+        for (let j = i; j <= 5; j++) {
+            document.write('*');
+        }
+
+        document.write('<br>');
+    }
+
+
+</script>
+</body>
+</html>

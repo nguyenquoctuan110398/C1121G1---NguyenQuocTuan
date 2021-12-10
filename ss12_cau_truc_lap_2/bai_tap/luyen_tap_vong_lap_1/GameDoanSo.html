@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<button type="button" onclick="choi()">Chơi</button>
+<script>
+    // Mọi về fix yêu cầu nhập 2 số min và max phải là số nguyên dương
+    // ( nếu như không thỏa mãn thì bặt phải nhập lại cho
+    // đến khi nào thỏa mãn mới được thực hiện bước theo.=> gợi ý: thì có
+    function choi() {
+        let min = parseInt(prompt("nhập vào giá nhỏ nhất cần dự đoán")); //40 => tạo tự động 1 số ngẫu nhiên để đoán
+        let max = parseInt(prompt("nhập vào giá lớn nhất cần đoán")); //100 => tạo tự động 1 số ngẫu nhiên để đoán
+        let random = Math.round(Math.random() * (max - min)) + min; // nằm khoảng 0-1; => số radom nằm khoàng (0-max)
+        // alert(random);
+        let count = 0;
+        do {
+            count++;
+            let yourNumber = parseInt(prompt("nhập số bạn dự đoán lần thứ " + count));
+            if (yourNumber == random) {
+                alert("bạn đã chiến thắng");
+                break;
+            } else if (yourNumber < random) {
+                alert("số nhập đang bé hơn kết quả. Yêu cầu nhập lại");
+            } else {
+                alert("số nhập đang lớn hơn kết quả. Yêu cầu nhập lại")
+            }
+            if (count == 3) {
+                alert("Bạn đã thua. vì đã đã hết 3 lần đoán")
+            }
+        } while (count < 3);
+
+    }
+</script>
+</body>
+</html>
