@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = new Array(10);
+    let check;
+    for (let i = 0; i < a.length; i++) {
+        do {
+            a[i] = prompt('Nhập vào phần tử thứ ' + i + ' của mảng a: ');
+            check = parseInt(a[i]) == a[i];
+        } while (!check)
+    }
+
+    let b = new Array(10);
+    let check1;
+    for (let i = 0; i < b.length; i++) {
+        do {
+            b[i] = prompt('Nhập vào phần tử thứ ' + i + ' của mảng b: ');
+            check1 = parseInt(b[i]) == b[i];
+        } while (!check1)
+    }
+    document.write('Mảng a là: ' + a + '<br>');
+    document.write('Mảng b là: ' + b + '<br>');
+    let c = a.concat(b);
+    document.write('Mảng c là: ' + c);
+</script>
+</body>
+</html>

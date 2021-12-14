@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array(10);
+    let check;
+    for (let i = 0; i < arr.length; i++) {
+        do {
+            arr[i] = prompt('Nhập vào phần tử thứ ' + i);
+            check = parseInt(arr[i]) == arr[i];
+        } while (!check)
+    }
+    arr.sort(function (x, y) {
+        return x - y;
+    })
+    document.write(arr);
+</script>
+</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size;
+    let check;
+    do {
+        size = prompt("Nhập độ dài của mảng");
+        check = parseInt(size) == size && size>0;
+    } while (!check)
+    let arr = new Array(parseInt(size));
+    alert(arr.length);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("nhập vào phần tử thứ " + i));
+    }
+    let max = arr[0];
+    let tongg = parseInt(arr[0]);
+    let index = 0;
+    let avg;
+
+    for (let i = 1; i < arr.length; i++) {
+        tongg += parseInt(arr[i]);
+        if (parseInt(arr[i]) > parseInt(max)) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    alert("max: " + max + " at position " + index);
+    avg = tongg / (arr.length);
+
+    alert('Trung bình của mảng là: ' + avg);
+    // let max = array[0];
+
+    // document.write(array);
+</script>
+</body>
+</html>

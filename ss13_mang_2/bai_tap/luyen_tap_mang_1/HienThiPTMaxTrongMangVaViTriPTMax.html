@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let arr = new Array(10);
+    let check;
+    for (let i = 0; i < arr.length; i++) {
+        do {
+            arr[i] = prompt('Nhập vào phần tử thứ ' + i);
+            check = parseInt(arr[i]) == arr[i];
+        } while (!check)
+    }
+    document.write(arr);
+    // let max = arr[0];
+    // alert('Phần tử 1 trong mảng là: ' + arr[1]);
+    // alert(typeof(arr[1]));
+    //
+    // alert('Max đang là: ' + max);
+    // alert(typeof(max));
+    // if (parseInt(arr[1]) > parseInt(max)) {
+    //     alert('true')
+    //     max = arr[1];
+    //     alert(max);
+    //     index = 1;
+    // }
+    // alert(max);
+    let max = arr[0];
+    let index = 0;
+    for (let i = 1; i <= arr.length; i++) {
+        if (parseInt(arr[i]) > parseInt(max)) {
+            max = arr[i];
+            index = i;
+        }
+    }
+    alert("max: " + max + " at position " + index);
+</script>
+</body>
+</html>

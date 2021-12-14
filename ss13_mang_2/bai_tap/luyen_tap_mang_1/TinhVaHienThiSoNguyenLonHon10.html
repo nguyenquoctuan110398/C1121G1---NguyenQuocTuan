@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let count = 0;
+    let numbers = [-3, -5, 8, 3, 12, 10, 22, -20, 6, 10];
+    let text = "";
+    for (let i = 0; i < numbers.length; i++) {
+        if (numbers[i] >= 10) {
+            count++;
+            text += numbers[i] + ', ';
+        }
+    }
+    document.write('Có ' + count + ' phần tử trong mảng lớn hơn 10 là: ' + text)
+</script>
+</body>
+</html>

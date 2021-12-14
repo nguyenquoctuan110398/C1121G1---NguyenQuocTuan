@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size;
+    let check;
+    do {
+        size = prompt("Nhập độ dài của mảng");
+        check = parseInt(size) == size && size>0;
+    } while (!check)
+    let arr = new Array(parseInt(size));
+    alert(arr.length);
+
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("nhập vào phần tử thứ " + i));
+    }
+
+    let first = 0;
+    let last = arr.length - 1;
+    while (first < last) {
+        let b = arr[first];
+        arr[first] = arr[last];
+        arr[last] = b;
+        first++;
+        last--;
+    }
+    document.write(arr);
+
+</script>
+</body>
+</html>

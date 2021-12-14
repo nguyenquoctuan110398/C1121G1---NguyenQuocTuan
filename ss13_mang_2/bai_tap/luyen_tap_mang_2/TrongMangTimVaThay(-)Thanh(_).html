@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size;
+    let check;
+    do {
+        size = prompt("Nhập độ dài của mảng");
+        check = parseInt(size) == size && size>0;
+    } while (!check)
+    let arr = new Array(parseInt(size));
+    alert(arr.length);
+
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = parseInt(prompt("nhập vào phần tử thứ " + i));
+    }
+    document.write("Mảng lúc đầu:" + arr+"<br>");
+
+    for (let j = 0; j < n; j++)
+        if (arr[j] === "-") {
+            arr[j] = "_";
+        }
+    document.write("Mảng lúc sau:" + arr);
+    // let size;
+    // let check;
+    // do {
+    //     size = prompt("Nhập độ dài của mảng");
+    //     check = parseInt(size) == size;
+    // } while (!check)
+    // let arr = new Array(parseInt(size));
+    // alert(arr.length);
+    // for (let i = 0; i < arr.length; i++) {
+    //     arr[i] = prompt('Nhập vào phần tử thứ ' + i);
+    // }
+    // document.write('Mảng lúc đầu là: ' + arr);
+    //
+    // for (let i = 0; i < arr.length; i++) {
+    //     if (arr[i] == '-') {
+    //         arr[i] = '_';
+    //     }
+    // }
+    // document.write('<br>' + 'Mảng lúc sau là: ' + arr);
+</script>
+</body>
+</html>
