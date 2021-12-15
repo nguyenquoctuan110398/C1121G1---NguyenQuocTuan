@@ -14,10 +14,20 @@
             check = parseInt(arr[i]) == arr[i];
         } while (!check)
     }
-    // document.write(arr);
+    document.write('Mảng đã cho là: ' + arr + '<br>');
     let V = prompt('Nhập vào số nguyên V: ');
     let index = 0;
     let check1 = true;
+    let check2 = true;
+    let soSo2CoTrongMang = 0;
+    for (let i = 0; i < arr.length; i++) {
+        if (V == arr[i]) {
+            soSoVCoTrongMang++;
+        }
+    }
+    alert('Số số ' + v + ' có trong mảng là: ' + soSo2CoTrongMang)
+
+
     for (let i = 0; i < arr.length; i++) {
         if (V != arr[i]) {
             check1 = false;
@@ -27,18 +37,26 @@
             break;
         }
     }
+
     let b = 0;
     if (check1) {
-        for (let i = index; i < arr.length-1; i++) {
-            b = arr[i];
-            arr[i] = arr[i + 1];
-            arr[i + 1] = b;
+        for (let j = 0; j < soSo2CoTrongMang; j++) {
+            for (let i = index; i < arr.length - 1; i++) {
+                b = arr[i];
+                arr[i] = arr[i + 1];
+                arr[i + 1] = b;
+            }
+            arr.pop();
+            arr.push('0');
+            document.write(arr + '<br>');
         }
-        arr.pop();
-        document.write(arr);
     } else {
-        document.write('V ko thuộc mảng!')
+        document.write('V ko thuộc mảng')
     }
+
+    // if (!check2) {
+    //
+    // }
 </script>
 </body>
 </html>
