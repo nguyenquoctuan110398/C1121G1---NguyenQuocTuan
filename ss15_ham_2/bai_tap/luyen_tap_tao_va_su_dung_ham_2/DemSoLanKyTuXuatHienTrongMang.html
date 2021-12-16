@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    do {
+        size = prompt("Nhập độ dài của mảng");
+        check = parseInt(size) == size && size > 0;
+    } while (!check)
+    let arr = new Array(parseInt(size));
+    alert(arr.length);
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = prompt('Nhập vào phần tử thứ ' + i);
+    }
+    document.write('Mảng lúc đầu là: ' + arr + '<br>');
+
+    let kyTu = prompt('Nhập vào 1 ký tự: ');
+    document.write('Ký tự nhập vào là: ' + kyTu + '<br>');
+
+    function demSoLanKyTuXuatHien(arr) {
+
+        let count = 0;
+        let checker = false;
+
+        for (let i = 0; i < arr.length; i++) {
+            if (kyTu == arr[i]) {
+                count++;
+                checker = true;
+                // alert('Vòng lặp: ' + count)
+            }
+        }
+        if (checker) {
+            return count;
+        } else
+            return -1;
+    }
+
+    document.write('Số lần ký tự xuất hiện trong mảng là: ' + demSoLanKyTuXuatHien(arr))
+
+</script>
+</body>
+</html>
