@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    const pi = 3.14;
+
+    function tinhDienTichChuVi(banKinh) {
+        let dienTich, chuVi;
+        dienTich = pi * banKinh * banKinh;
+        chuVi = pi * 2 * banKinh;
+        return 'Diện tích là: ' + dienTich + '<br>' + 'Chu vi là: ' + chuVi;
+    }
+
+    let banKinh = prompt('Nhập bán kính hình tròn: ');
+    document.write(tinhDienTichChuVi(banKinh));
+</script>
+</body>
+</html>

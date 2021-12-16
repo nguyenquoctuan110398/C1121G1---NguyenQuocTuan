@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function giaiThua(number) {
+        let giaiThua = 1;
+        for (let i = 1; i <= number; i++) {
+            giaiThua *= i;
+        }
+        return giaiThua;
+    }
+
+    let n = prompt('Nhập vào số nguyên: ');
+    document.write('Giai thừa của ' + n + ' là: ' + giaiThua(n));
+</script>
+</body>
+</html>

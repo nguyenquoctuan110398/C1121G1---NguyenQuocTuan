@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    // Tạo hàm nhận vào hai tham số.
+    // Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai,
+    // hiển thị hộp thoại thông báo cho người dùng.
+    // Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai,
+    // trả về tổng của hai tham số.
+
+    function thamSo(soThuNhat, soThuHai) {
+        let sum = 0;
+        if (soThuNhat > soThuHai) {
+            return alert('Số thứ nhất lớn hơn số thứ hai');
+        } else {
+            sum = soThuNhat + soThuHai;
+            return sum;
+        }
+    }
+
+    let ketQua = thamSo(5, 5);
+    document.write(ketQua);
+
+</script>
+
+</body>
+</html>
