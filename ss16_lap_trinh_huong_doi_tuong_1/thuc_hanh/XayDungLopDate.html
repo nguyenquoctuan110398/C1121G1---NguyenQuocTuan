@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class MyDate {
+        constructor(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        getDay() {
+            return this.day;
+        }
+
+        getMonth() {
+            return this.month;
+        }
+
+        getYear() {
+            return this.year;
+        }
+
+        setDay(day) {
+            this.day = day;
+        }
+
+        setMonth(month) {
+            this.month = month;
+        }
+
+        setYear(year) {
+            this.year = year;
+        }
+
+        setDate(day, month, year) {
+            this.day = day;
+            this.month = month;
+            this.year = year;
+        }
+
+        toString() {
+            return alert(this.day + '/' + this.month + '/' + this.year)
+        }
+    }
+
+    let date = new MyDate(2, 2, 2007);
+
+    let day = date.getDay();
+    let month = date.getMonth();
+    let year = date.getYear();
+
+    alert(day + '/' + month + '/' + year);
+
+    date.setDay(16);
+    date.setMonth(2);
+    date.setYear(2016);
+
+    day = date.getDay();
+    month = date.getMonth();
+    year = date.getYear();
+    alert(day + '/' + month + '/' + year);
+
+    date.setDate(11, 3, 1998);
+
+    date.toString(date)
+
+
+</script>
+</body>
+</html>
+
+<!--<!DOCTYPE html>-->
+<!--<html lang="en">-->
+<!--<head>-->
+<!--    <meta charset="UTF-8">-->
+<!--    <title>Title</title>-->
+<!--</head>-->
+<!--<body>-->
+
+<!--</body>-->
+<!--<script>-->
+<!--    class Person {-->
+<!--        constructor( name, age, gender  ) {-->
+<!--            this.name = name ;-->
+<!--            this.age = age ;-->
+<!--            this.gender = gender ;-->
+<!--        }-->
+<!--        // get là lấy giá trị ra.-->
+<!--        getName(){-->
+<!--            return this.name;-->
+<!--        }-->
+<!--        // set là gán lại giá trị cho thuộc tính-->
+<!--        setName( name ) {-->
+<!--            this.name = name;-->
+<!--        }-->
+<!--        getAge(){-->
+<!--            return this.age;-->
+<!--        }-->
+<!--        setAge( age ) {-->
+<!--            this.age = age;-->
+<!--        }-->
+
+<!--        study() {-->
+<!--            alert( this.name + " không muốn học!");-->
+<!--        }-->
+<!--    }-->
+
+<!--    // Class Student kế thừa những thuộc tính và hành vi của class Person.-->
+<!--    class Student extends Person {-->
+
+<!--        constructor(name, age, gender, score ) {-->
+<!--            // Đại diện cho constructor của class Cha-->
+<!--            super(name, age, gender);-->
+<!--            this.score = score;-->
+<!--        }-->
+
+<!--        // CÓ thể định nghĩa lại hành vi của class cha. gọi là Override-->
+<!--        study(){-->
+<!--            alert(this.name + " Đang học!");-->
+<!--        }-->
+
+<!--        // study( subject ){-->
+<!--        //     alert(this.name + " Đang học môn " + subject);-->
+<!--        // }-->
+<!--        // super đại diện cho class cha.-->
+<!--        say(){-->
+<!--            super.study();-->
+<!--        }-->
+
+<!--    }-->
+
+<!--    let person1 = new Person();-->
+<!--    person1.setName("Chiến") ;-->
+<!--    person1.setAge(30)-->
+<!--    console.log(person1.getAge());-->
+
+<!--    let student1 = new Student("Tuấn", 25, "Nam", 100);-->
+<!--    console.log("Student có gì!");-->
+<!--    student1.setName("Trung");-->
+<!--    student1.setAge(40);-->
+<!--    student1.study();-->
+<!--    console.log(student1.getName());-->
+<!--</script>-->
+<!--</html>-->
+
+
+

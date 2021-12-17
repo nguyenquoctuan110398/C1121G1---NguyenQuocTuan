@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<canvas id="myCanvas"></canvas>
+
+<script>
+    class Rectangle {
+        constructor(width, height) {
+            this.width = width;
+            this.height = height;
+        }
+
+        getArea() {
+            return this.width * this.height;
+        }
+
+        getPerimeter() {
+            return (this.width + this.height) * 2;
+        }
+    }
+    let width= parseInt(prompt('Nhập chiều dài: '));
+    let height= parseInt(prompt('Nhập chiều rộng: '));
+    let rectangle = new Rectangle(width, height);
+    let area = rectangle.getArea();
+    let perimeter = rectangle.getPerimeter();
+
+    alert('Area là: ' + area + ' Perimeter là: ' + perimeter);
+
+    let canvas = document.getElementById("myCanvas");
+    if (canvas.getContext) {
+        let ctx = canvas.getContext('2d');
+        ctx.fillRect(0, 0, rectangle.width, rectangle.height); // create rectangle
+    }
+
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(doC) {
+            this.doC = doC;
+        }
+
+        doCToDoF() {
+            return 1, 8 * this.doC + 32;
+        }
+
+        doCToDoKevin() {
+            return this.doC + 273;
+        }
+
+    }
+
+    let doC = parseFloat(prompt('Nhập độ C: '));
+    let temperature = new Temperature(doC);
+
+    let doF = temperature.doCToDoF();
+    let doKevin = temperature.doCToDoKevin();
+
+    alert(doC + ' độ C bằng ' + doF + ' độ F hoặc bằng ' + doKevin + ' độ Kenvin');
+
+</script>
+</body>
+</html>
