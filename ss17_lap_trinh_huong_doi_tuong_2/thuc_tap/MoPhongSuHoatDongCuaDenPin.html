@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đèn pin</title>
+</head>
+<body>
+<script>
+    class Battery {
+        constructor() {
+            this.energy = 100;
+        }
+
+        setEnergy(energy) {
+            this.energy = energy;
+        }
+
+        getEnergy() {
+            return this.energy;
+        }
+
+        decreaseEnergy() {
+            if (this.energy > 0) {
+                this.energy--;
+            }
+        }
+    }
+
+    class FlashLamp {
+        constructor() {
+            this.status = false;
+            this.battery = null;
+        }
+
+        setBattery(battery) {
+            this.battery = battery;
+        }
+
+        getBatteryInfo() {
+            return this.battery.getEnergy();
+        }
+
+        light() {
+            if (this.status) {
+                alert("Đèn sáng");
+            } else alert("Đèn tắt");
+        }
+
+        turnOff() {
+            this.status = false;
+        }
+
+        turnOn() {
+            this.battery.decreaseEnergy();
+            this.status = true;
+        }
+
+    }
+
+    let battery = new Battery();
+    // battery.setEnergy(10);
+
+    let flashLamp = new FlashLamp();
+    // flashLamp.setBattery(battery);
+
+    flashLamp.setBattery(battery);
+    flashLamp.light();
+
+    flashLamp.turnOn();
+    flashLamp.light();
+
+    flashLamp.turnOff();
+    flashLamp.light();
+
+    alert(battery.getEnergy());
+
+    // document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
+    // flashLamp.light();
+    //
+    // document.write("Turn on<br/>")
+    // flashLamp.turnOn();
+    // flashLamp.light();
+    // document.write("Battery info:" + flashLamp.getBatteryInfo() + "<br/>");
+    //
+    // document.write("Turn off<br/>")
+    // flashLamp.turnOff();
+    // flashLamp.light();
+
+
+</script>
+</body>
+</html>

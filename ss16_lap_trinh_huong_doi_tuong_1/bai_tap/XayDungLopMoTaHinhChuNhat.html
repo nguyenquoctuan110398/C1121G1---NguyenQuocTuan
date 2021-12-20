@@ -21,6 +21,14 @@
         getPerimeter() {
             return (this.width + this.height) * 2;
         }
+
+        paintRectangle() {
+            let canvas = document.getElementById("myCanvas");
+            if (canvas.getContext) {
+                let ctx = canvas.getContext('2d');
+                ctx.fillRect(0, 0, rectangle.width, rectangle.height); // create rectangle
+            }
+        }
     }
     let width= parseInt(prompt('Nhập chiều dài: '));
     let height= parseInt(prompt('Nhập chiều rộng: '));
@@ -30,12 +38,12 @@
 
     alert('Area là: ' + area + ' Perimeter là: ' + perimeter);
 
-    let canvas = document.getElementById("myCanvas");
-    if (canvas.getContext) {
-        let ctx = canvas.getContext('2d');
-        ctx.fillRect(0, 0, rectangle.width, rectangle.height); // create rectangle
-    }
-
+    // let canvas = document.getElementById("myCanvas");
+    // if (canvas.getContext) {
+    //     let ctx = canvas.getContext('2d');
+    //     ctx.fillRect(0, 0, rectangle.width, rectangle.height); // create rectangle
+    // }
+let picture = rectangle.paintRectangle();
 </script>
 </body>
 </html>
