@@ -6,18 +6,61 @@
 </head>
 <body>
 <script>
-    class Rat{
-        constructor(name, weight, speed, status) {
-            this.name=name;
-            this.weight=weight;
-            this.speed=speed;
-            this.status=status;
+    class Rat {
+        constructor(name, weight, speed) {
+            this.name = name;
+            this.weight = weight;
+            this.speed = speed;
+            this.status = true;
         }
 
-        sounding(){
-
+        sounding() {
+            alert("chít, chít");
         }
     }
+
+    class Cat {
+        constructor(name, weight, maxSpeed) {
+            this.name = name;
+            this.weight = weight;
+            this.maxSpeed = maxSpeed;
+        }
+
+        sounding() {
+            alert("meo, meo");
+        }
+
+        batChuot(chuot) {
+            if (this.maxSpeed > chuot.speed) {
+                return true;
+            } else return false;
+        }
+
+        anThitChuot(chuot) {
+            if (this.batChuot(chuot)) {
+                if (chuot.status) {
+                    alert("Mèo đã ăn thịt con chuột " + chuot.name);
+                    this.weight += chuot.weight;
+                    alert("Cân nặng của mèo sau khi ăn là: " + this.weight);
+                    return chuot.status = false;
+                } else {
+                    alert('Chuột ' + chuot.name + ' đã chết, không ăn')
+                }
+            } else {
+                alert("Tốc độ của mèo nhỏ hơn, ko bắt được");
+            }
+        }
+    }
+
+    let meo = new Cat('Tobi', 5, 20);
+    let chuot = new Rat('Jerry', 1, 10);
+    let chuot1 = new Rat('Mèo', 3, 15);
+
+    meo.batChuot(chuot);
+    meo.anThitChuot(chuot);
+    meo.batChuot(chuot1);
+    meo.anThitChuot(chuot1);
+    meo.anThitChuot(chuot1);
 </script>
 </body>
 </html>

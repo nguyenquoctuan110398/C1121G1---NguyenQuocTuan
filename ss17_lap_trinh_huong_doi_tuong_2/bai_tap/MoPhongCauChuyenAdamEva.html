@@ -7,8 +7,8 @@
 <body>
 <script>
     class Apple {
-        constructor(weight) {
-            this.weight = weight;
+        constructor() {
+            this.weight = 10;
         }
 
         decrease() {
@@ -20,8 +20,10 @@
 
         isEmpty() {
             if (this.weight == 0) {
+                return true;
+            } else {
                 return false;
-            } else return true;
+            }
         }
 
         getWeigth() {
@@ -37,47 +39,26 @@
         }
 
         isMale() {
-            return this.gender;
+            if (this.gender == 'Male') {
+                return true;
+            } else return false;
+        }
+
+        setGender(gender) {
+            this.gender = gender;
         }
 
         getGender() {
             return this.gender;
         }
 
-        setGender(string) {
-            this.gender = string;
-        }
-
-        checkApple(Apple) {
-            if (Apple.decrease()) {
-                // alert("Khối lượng của quả táo còn lại là: " + Apple.weight);
-                return true;
-            } else {
-                // alert("Đã hết táo");
-                return false;
-            }
-        }
-
-        eat(Apple) {
-            if (Apple.isEmpty()) {
-                this.weight++;
-                Human.getWeight;
-                // this.checkApple(Apple);
-                // return alert("Cân nặng của người là: " + this.weight);
-            }
-        }
-
-        say(string) {
-            console.log(string);
-            // this.string=string;
-        }
 
         getName() {
             return this.name;
         }
 
-        setName(String) {
-            this.name = String;
+        setName(name) {
+            this.name = name;
         }
 
         getWeight() {
@@ -88,26 +69,60 @@
             this.weight = weight;
         }
 
+        checkApple(apple) {
+            if (apple.isEmpty()) {
+                // alert("Đã hết táo");
+                return false;
+            } else {
+                // alert("Khối lượng của quả táo còn lại là: " + apple.weight);
+                return true;
+            }
+        }
+
+        eat(apple) {
+            if (this.checkApple(apple)) {
+                apple.decrease();
+                this.weight++;
+                // this.checkApple(Apple);
+                // return alert("Cân nặng của người là: " + this.weight);
+            } else {
+                console.log(this.name + ' đã ăn hết táo');
+            }
+
+            // if (Apple.isEmpty()) {
+            //     Apple.decrease();
+            //     this.weight++;
+            //     Human.getWeight;
+            //     // this.checkApple(Apple);
+            //     // return alert("Cân nặng của người là: " + this.weight);
+            // }
+        }
+
+        say(string) {
+            console.log(string);
+            // this.string=string;
+        }
     }
 
-    const a = 10;
-    let apple = new Apple(a);
-    let human = new Human('Adam', 'Male', 5);
 
-    let name = human.getName();
-    let gender = human.getGender();
-    let weight = human.getWeight();
-    console.log('Tên: ' + name + ' Giới tính: ' + gender + ' Cân nặng: ' + weight);
+    let tao = new Apple();
+    let adam = new Human('Adam', 'Male', 10);
+    //
+    // let name = adam.getName();
+    // let gender = adam.getGender();
+    // let weight = adam.getWeight();
+    // console.log('Tên: ' + name + ' Giới tính: ' + gender + ' Cân nặng: ' + weight);
+    //
+    // let string = prompt("Nhập câu nói của human");
+    // adam.say(string);
 
-    let string = prompt("Nhập câu nói của human");
-
-
-    while (human.checkApple(apple)) {
-        human.eat(apple);
+    // adam.checkApple(apple);
+    while (adam.checkApple(tao)) {
+        adam.eat(tao);
     }
-    document.write('Cân nặng của ' + human.name + ' là: ' + human.weight)
+    document.write('Cân nặng của ' + adam.name + ' là: ' + adam.weight)
     // document.write("Cân nặng của human là: " + human.weight)
-    // human.eat(apple);
+    // adam.eat(tao);
     // human.eat(apple);
     // human.eat(apple);
     // human.eat(apple);
@@ -120,7 +135,8 @@
     // human.eat(apple);
 
     // human.checkApple(apple);
-    // weight = human.getWeight();
+    // weight = adam.getWeight();
+    // alert("Cân nặng là: " + adam.weight);
 
 </script>
 </body>
