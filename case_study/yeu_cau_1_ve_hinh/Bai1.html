@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hình chữ nhật rỗng</title>
+</head>
+<body>
+<script>
+    let x = parseInt(prompt("Nhập chiều dài n: "));
+    let y = parseInt(prompt("Nhập chiều rộng m: "));
+    for (let i = 0; i < x; i++) {
+        for (let j = 0; j < y; j++) {
+            if ((i == 0) || (j == 0) || (i == (x - 1)) || (j == (y - 1))) {
+                document.write('*');
+            } else {
+                document.write('&nbsp&nbsp');
+            }
+        }
+        document.write('<br>');
+    }
+</script>
+</body>
+</html>

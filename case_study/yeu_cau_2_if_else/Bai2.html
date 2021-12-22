@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nguyên âm phụ âm</title>
+</head>
+<body>
+<script>
+    let nguyenAm = ['o', 'u', 'i', 'a', 'e', 'O', 'U', 'I', 'A', 'E'];
+    let kyTu = prompt("Nhập 1 ký tự trong bảng tiếng anh: ");
+    let check = false;
+    for (let i = 0; i < nguyenAm.length; i++) {
+        if (kyTu == nguyenAm[i]) {
+            check = true;
+            break;
+        }
+    }
+    if (check) {
+        document.write(kyTu + " là nguyên âm");
+    } else {
+        document.write(kyTu + " là phụ âm");
+    }
+</script>
+</body>
+</html>

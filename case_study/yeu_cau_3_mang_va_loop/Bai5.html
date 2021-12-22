@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Gọi món</title>
+</head>
+<body>
+<script>
+    let chonMon;
+    let tong = 0;
+
+    document.write("1.Cafe" + "<br>");
+    document.write("2.Cam vắt" + "<br>");
+    document.write("3.Nước ép cà rốt" + "<br>");
+    document.write("4.Nước ép cà chua" + "<br>");
+    document.write("5.Nước lọc" + "<br>");
+    document.write("6.Nước dừa" + "<br>");
+    document.write("7.Thoát" + "<br>");
+
+    do {
+        chonMon = parseInt(prompt("Nhập món muốn chọn: "));
+        switch (chonMon) {
+            case 1: {
+                document.write("Bạn chọn Cafe có giá là 15000: " + "<br>");
+                let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+                document.write("Số lượng bạn chọn là: " + soLuong + "<br>");
+                tong += 15000 * soLuong;
+                break;
+            }
+
+            case 2: {
+                document.write("Bạn chọn Cam vắt có giá là 20000: " + "<br>");
+                let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+                document.write("Số lượng bạn chọn là: " + soLuong + "<br>");
+                tong += 20000 * soLuong;
+                break;
+            }
+
+            case 3: {
+                document.write("Bạn chọn Nước ép cà rốt có giá là 25000: " + "<br>");
+                let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+                document.write("Số lượng bạn chọn là: " + soLuong + "<br>");
+                tong += 25000 * soLuong;
+                break;
+            }
+
+            case 4: {
+                document.write("Bạn chọn Nước ép cà chua có giá là 25000: " + "<br>");
+                let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+                document.write("Số lượng bạn chọn là: " + soLuong + "<br>");
+                tong += 25000 * soLuong;
+                break;
+            }
+
+            case 5: {
+                document.write("Bạn chọn Nước lọc có giá là 5000: " + "<br>");
+                let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+                document.write("Số lượng bạn chọn là: " + soLuong + "<br>");
+                tong += 5000 * soLuong;
+                break;
+            }
+
+            case 6: {
+                document.write("Bạn chọn Nước dừa có giá là 30000: " + "<br>");
+                let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+                document.write("Số lượng bạn chọn là: " + soLuong + "<br>");
+                tong += 30000 * soLuong;
+                break;
+            }
+
+            case 7: {
+                break;
+            }
+        }
+    } while (chonMon != 7)
+    document.write("Tổng bill là: " + tong);
+    // do {
+    //     let tong = 0;
+    //     let chon = parseInt(prompt("Mời chọn món: "));
+    //     switch (chon) {
+    //         case 1: {
+    //             document.write("Bạn chọn Cafe có giá là 15000: " + "<br>");
+    //             let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+    //             tong += 15000 * soLuong;
+    //             break;
+    //         }
+    //         case 2: {
+    //             document.write("Bạn chọn Cam vắt có giá là 20000: " + "<br>");
+    //             let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+    //             tong += 20000 * soLuong;
+    //             break;
+    //         }
+    //         case 3: {
+    //             document.write("Bạn chọn Nước ép cà rốt có giá là 25000: " + "<br>");
+    //             let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+    //             tong += 25000 * soLuong;
+    //             break;
+    //         }
+    //         case 4: {
+    //             document.write("Bạn chọn Nước ép cà chua có giá là 25000: " + "<br>");
+    //             let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+    //             tong += 25000 * soLuong;
+    //             break;
+    //         }
+    //         case 5: {
+    //             document.write("Bạn chọn Nước lọc có giá là 5000: " + "<br>");
+    //             let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+    //             tong += 5000 * soLuong;
+    //             break;
+    //         }
+    //         case 6: {
+    //             document.write("Bạn chọn Nước dừa có giá là 30000: " + "<br>");
+    //             let soLuong = parseInt(prompt("Mời bạn nhập số lương: "));
+    //             tong += 30000 * soLuong;
+    //             break;
+    //         }
+    //         case 7: {
+    //             document.write("Tổng tiền: " + tong);
+    //             break;
+    //         }
+    //     }
+    // //
+    // // } while (!chon== 7)
+</script>
+</body>
+</html>

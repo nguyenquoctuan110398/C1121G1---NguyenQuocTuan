@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tam giác cân rỗng</title>
+</head>
+<body>
+<!--<p id="display" style="text-align: center"></p>-->
+<script>
+    let h = prompt("Nhập chiều cao h: ");
+    // let x = ""
+    let n = h - 1;
+    let m = h - 1;
+    for (let i = 0; i < h; i++) {
+        for (let j = 0; j < 2 * h - 1; j++) {
+            if ((i == h - 1) || (j == m) || (j == n)) {
+                document.write("*");
+            } else {
+                document.write("&nbsp&nbsp");
+            }
+        }
+        document.write("<br>");
+        n--;
+        m++;
+
+    }
+</script>
+</body>
+</html>

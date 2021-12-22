@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Lương nhân viên</title>
+</head>
+<body>
+<script>
+    let luong = prompt("Nhập lương của nhân viên: ");
+    let thue = 1;
+    let luongRong = 0;
+
+    if (luong < 7000000) {
+        thue *= 0.05 * luong;
+        luongRong += luong - thue;
+    } else if (luong < 15000000) {
+        thue *= 0.1 * luong;
+        luongRong += luong - thue;
+    } else {
+        thue *= 0.2 * luong;
+        luongRong += luong - thue;
+    }
+
+    document.write("Thuế phải trả là: " + thue + "<br> Lương ròng nhân viên nhận được là: " + luongRong);
+</script>
+</body>
+</html>

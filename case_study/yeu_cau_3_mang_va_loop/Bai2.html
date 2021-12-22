@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    function NhapMang() {
+        let size;
+        let check;
+        let check1;
+
+        do {
+            size = prompt("Nhập độ dài của mảng");
+            check = parseInt(size) == size && size > 0;
+        } while (!check)
+        let arr = new Array(parseInt(size));
+        alert(arr.length);
+
+        for (let i = 0; i < arr.length; i++) {
+            do {
+                arr[i] = prompt("nhập vào phần tử thứ " + i);
+                check1 = parseInt(arr[i]) == arr[i];
+            } while (!check1)
+            // arr[i] = parseInt(prompt("nhập vào phần tử thứ " + i));
+        }
+        return arr;
+    }
+
+    let a = NhapMang();
+    document.write("Mảng A là: " + a + "<br>");
+    let b = NhapMang();
+    document.write("Mảng B là: " + b + "<br>");
+    let c = [];
+
+    for (let i = 0; i < b.length; i++) {
+        let check = true;
+        for (let j = 0; j < a.length; j++) {
+            if (b[i] == a[j]) {
+                check = false;
+                break;
+                // } else {
+                //     c.push(b[i]);
+                // }
+
+            }
+        }
+        if (check) {
+            c.push(b[i]);
+            // document.write("c: " + c + "<br>")
+            for (let x = 1; x < c.length; x++) {
+                if (b[i] == c[x - 1]) {
+                    c.pop();
+                    break;
+                }
+                // }else {
+                //
+                // }
+            }
+            // c.push(b[i]);
+        }
+
+    }
+    document.write("Phần tử trong B không xuất hiện trong A là: " + c);
+
+    // Cách khác:
+    // let a=[1,2,3,4,5,6];
+    // let b=[1,2,4,6,8,0,9,1,3,9];
+    // let missValue=[];
+    // for(let i=0;i<b.length;i++){
+    //     if(a.indexOf(b[i])==-1&&missValue.indexOf(b[i])==-1){//nếu bỏ missValue.indexOf(b[i])==-1 thì nó sẽ trả về tất cả các giá trị có trong b mà ko có trong a
+    //         missValue.push(b[i]);
+    //     }
+    // }
+
+</script>
+</body>
+</html>
