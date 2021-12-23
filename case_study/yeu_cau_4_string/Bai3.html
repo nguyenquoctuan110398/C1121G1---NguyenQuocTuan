@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Ký tự chung trong 2 chuỗi</title>
+</head>
+<body>
+<script>
+
+    let count = 0;
+    let s1 = "aabcc";
+    let arr1 = s1.split('');
+
+    let s2 = "adcaa";
+    let arr2 = s2.split('');
+    let arr3 = [];
+
+    document.write("Chuỗi 1 là: " + s1 + "<br>");
+    document.write("Chuỗi 2 là: " + s2 + "<br>");
+
+    for (let i = 0; i < arr1.length; i++) {
+        for (let j = 0; j < arr2.length; j++) {
+            if (arr2[j] == arr1[i]) {
+                count++;
+                arr3.push(arr2[j]);
+                // arr2.splice(j, 1);
+                // arr1.splice(i, 1);
+                delete arr1[i];
+                // alert(arr1);
+                delete arr2[j];
+                break;
+                // j--;
+                // i--;
+                // break;
+            }
+        }
+    }
+
+    document.write("2 xâu s1 và s2 có " + count + " ký tự chung là: " + arr3);
+</script>
+</body>
+</html>

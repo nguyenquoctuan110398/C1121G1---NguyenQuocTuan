@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm ký tự khác nhau trong chuỗi</title>
+</head>
+<body>
+<script>
+    let s = "cabddefaca";
+    let arr = s.split("");
+    document.write("Chuỗi lúc đầu là: " + s + "<br>");
+
+    let arr1 = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr1.indexOf(arr[i]) == -1) {
+            arr1.push(arr[i]);
+        }
+    }
+    arr1 = arr1.sort();
+    document.write("Có " + arr1.length + " ký tự khác nhau là: " + arr1);
+</script>
+</body>
+</html>

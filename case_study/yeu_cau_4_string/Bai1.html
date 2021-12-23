@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuẩn hóa ký tự</title>
+</head>
+<body>
+<script>
+    let UPPER = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+    let LOWER = 'abcdefghijklmnopqrstuvwxyz';
+
+
+    let xauKyTu = prompt("Nhập vào 1 chuỗi");
+    let arr = xauKyTu.split(' ');
+    let b = "";
+    document.write("Chuỗi nhập lúc đầu là: " + xauKyTu);
+    for (let i = 0; i < arr.length; i++) {
+        // arr[i]=arr[i].toLowerCase();
+        // alert(arr[i]);
+        if (arr[i] != "") {
+            arr[i]=arr[i].toLowerCase();
+            // alert(arr[i]);
+            arr[i] = arr[i].charAt(0).toUpperCase() + arr[i].slice(1,arr[i].length);
+            b += arr[i] + ' ';
+
+        }
+    }
+
+    document.write('<br>' + 'Chuỗi nhận được là: ' + b);
+
+</script>
+</body>
+</html>

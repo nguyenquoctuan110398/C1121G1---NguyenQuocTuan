@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let m = parseInt(prompt("Nhập số hàng của mảng m: "));
+    let n = parseInt(prompt("Nhập số cột của mảng n: "));
+
+    // function nhapMang2Chieu(m, n) {
+    let r = [];
+    let arr = new Array(m);
+    for (let i = 0; i < m; i++) {
+        arr[i] = new Array(n);
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = prompt("Nhập phần tử: " + i + "-" + j);
+            r.push(arr[i][j]);
+        }
+        // r += '<br>';
+    }
+    document.write("Mảng là: " + r + "<br>");
+    document.write(tongMang2Chieu(arr));
+    // }
+
+    // let arr1 = nhapMang2Chieu(m, n);
+    function tongMang2Chieu(arr) {
+
+        let sum = 0;
+        for (let i = 0; i < m; i++) {
+            for (let j = 0; j < n; j++) {
+                if (arr[i][j] % 2 == 0) {
+                    sum += parseInt(arr[i][j]);
+                }
+            }
+        }
+        return "Tổng các số chẵn trong mảng là: " + sum;
+    }
+</script>
+</body>
+</html>
