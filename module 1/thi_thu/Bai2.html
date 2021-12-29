@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt('Nhập vào 1 chuỗi: ');
+    let b = 0;
+    tuVietTat(a);
+
+    function tuVietTat(string) {
+        let chuoiTraVe = "";
+        let arr = string.split(' ');
+        let arr1 = []
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] != "") {
+                b++;
+                arr1.push(arr[i]);
+            }
+        }
+        alert(arr1);
+        if (b >= 2) {
+            for (let i = 0; i < arr1.length; i++) {
+                chuoiTraVe += arr1[i].charAt(0).toUpperCase();
+            }
+            return chuoiTraVe;
+        } else {
+           return "Chuỗi nhỏ hơn 1 từ nên không cần viết tắt";
+        }
+    }
+</script>
+</body>
+</html>

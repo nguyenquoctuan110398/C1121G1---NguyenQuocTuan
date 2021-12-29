@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let date
+    let month;
+    let year;
+    let check;
+    let checkMonth;
+    let checkYear;
+
+    do {
+        date = prompt("Nhập vào tháng năm: ");
+        month = date.substr(0, date.indexOf("/"));
+        // alert(month);
+        checkMonth = parseInt(month) == month && month > 0 && month <= 12;
+        year = date.substr(date.indexOf("/") + 1, date.length);
+        // alert(year);
+        checkYear = parseInt(year) == year;
+    } while (!checkMonth || !checkYear)
+
+    display = day(month, year);
+    document.write(display);
+
+    function day(month, year) {
+
+        month = parseInt(month);
+        year = parseInt(year);
+
+        switch (month) {
+            case 1:
+            case 3:
+            case 5:
+            case 7:
+            case 8:
+            case 10:
+            case 12: {
+                return "Tháng " + month + "/" + year + " có 31 ngày";
+                break;
+            }
+            case 4:
+            case 6:
+            case 9:
+            case 11: {
+                return "Tháng " + month + "/" + year + " có 30 ngày";
+                break;
+            }
+            case 2: {
+                let isLeapYear = false;
+                let isDivisivLeBy4 = year % 4 == 0;
+                if (isDivisivLeBy4) {
+                    let isDivisivLeBy100 = year % 100 == 0;
+                    if (isDivisivLeBy100) {
+                        let isDivisivLeBy400 = year % 400 == 0;
+                        if (isDivisivLeBy400) {
+                            isLeapYear = true;
+                        }
+                    } else {
+                        isLeapYear = true;
+                    }
+                }
+                if (isLeapYear) {
+                    return "Tháng " + month + "/" + year + " có 29 ngày";
+                } else {
+                    return "Tháng " + month + "/" + year + " có 28 ngày";
+                }
+            }
+        }
+    }
+
+</script>
+</body>
+</html>

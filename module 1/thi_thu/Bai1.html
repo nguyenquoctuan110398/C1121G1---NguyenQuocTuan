@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let size;
+    let check;
+    let count = 0;
+    let sum = 0;
+    do {
+        size = prompt("Nhập độ dài của mảng");
+        check = parseInt(size) == size && size > 0 && size <= 50;
+    } while (!check)
+    let arr = new Array(parseInt(size));
+    for (let i = 0; i < arr.length; i++) {
+        arr[i] = prompt('Nhập vào phần tử thứ ' + i);
+    }
+    document.write('Mảng lúc đầu là: ' + arr + "<br>");
+
+    for (let i = 0; i < arr.length; i +=3) {
+        if (arr[i] % 5 == 0) {
+            // alert(arr[i]);
+            sum += parseInt(arr[i]);
+            count++;
+        }
+    }
+
+    avg = sum / count;
+    document.write("Kết quả trung bình của các phần tử chia hết\n" +
+        "cho 5 ở vị trí chia hết cho 3 là: " + avg);
+</script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let number;
+    let check;
+    let sum = 0;
+
+    do {
+        number = prompt("Nhập vào 1 số nguyên dương: ");
+        check = parseInt(number) == number && number > 0;
+    } while (!check);
+
+    let result = perfectNumber(number);
+    document.write(result);
+
+    function perfectNumber(number) {
+        for (let i = 1; i < number; i++) {
+            if (number % i == 0) {
+                sum += i;
+            }
+        }
+        if (number == sum) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
