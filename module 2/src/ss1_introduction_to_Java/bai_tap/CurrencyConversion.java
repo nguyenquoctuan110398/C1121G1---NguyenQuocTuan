@@ -4,13 +4,13 @@ import java.util.Scanner;
 
 public class CurrencyConversion {
     public static void main(String[] args) {
-        double VND = 23000;
+        double vnd = 23000;
         Scanner scanner = new Scanner(System.in);
         System.out.println("Enter USD: ");
-        double USD = scanner.nextDouble();
+        double usd = scanner.nextDouble();
 
-        VND *= USD;
+        vnd *= usd;
 
-        System.out.printf("%f USD = %f VNĐ", USD, VND);
+        System.out.printf("%f USD = %f VNĐ", usd, vnd);
     }
 }

@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap_trong_java/bai_tap/DisplayGeometry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap_trong_java/bai_tap/ShowFirst20Primes.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap_trong_java/thuc_hanh/CalculateInterest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap_trong_java/thuc_hanh/DrawingMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap_trong_java/thuc_hanh/GreatestCommonFactor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss2_vong_lap_trong_java/thuc_hanh/PrimeNumber.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss1_introduction_to_Java/bai_tap/ReadNumber.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss1_introduction_to_Java/bai_tap/ReadNumber.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss1_introduction_to_Java/bai_tap/CurrencyConversion.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss1_introduction_to_Java/bai_tap/CurrencyConversion.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss1_introduction_to_Java/thuc_hanh/KhaiBaoVaSuDungBien.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss1_introduction_to_Java/thuc_hanh/DeclareAndUseVariables.java" afterDir="false" />
-    </list>
+    <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -42,19 +31,19 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../module 2" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
   </component>
-  <component name="RunManager" selected="Application.ShowPrimesLessThan100">
-    <configuration name="DisplayGeometry" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap_trong_java.bai_tap.DisplayGeometry" />
+  <component name="RunManager" selected="Application.CurrencyConversion">
+    <configuration name="BodyMassIndex" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss1_introduction_to_Java.thuc_hanh.BodyMassIndex" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap_trong_java.bai_tap.*" />
+          <option name="PATTERN" value="ss1_introduction_to_Java.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -62,12 +51,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="DrawingMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap_trong_java.thuc_hanh.DrawingMenu" />
+    <configuration name="CheckLeapYear" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss1_introduction_to_Java.thuc_hanh.CheckLeapYear" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap_trong_java.thuc_hanh.*" />
+          <option name="PATTERN" value="ss1_introduction_to_Java.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -75,12 +64,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="GreatestCommonFactor" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap_trong_java.thuc_hanh.GreatestCommonFactor" />
+    <configuration name="CurrencyConversion" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss1_introduction_to_Java.bai_tap.CurrencyConversion" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap_trong_java.thuc_hanh.*" />
+          <option name="PATTERN" value="ss1_introduction_to_Java.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +77,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShowFirst20Primes" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap_trong_java.bai_tap.ShowFirst20Primes" />
+    <configuration name="Hello" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss1_introduction_to_Java.bai_tap.Hello" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap_trong_java.bai_tap.*" />
+          <option name="PATTERN" value="ss1_introduction_to_Java.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +90,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ShowPrimesLessThan100" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss2_vong_lap_trong_java.bai_tap.ShowPrimesLessThan100" />
+    <configuration name="ReadNumber" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss1_introduction_to_Java.bai_tap.ReadNumber" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss2_vong_lap_trong_java.bai_tap.*" />
+          <option name="PATTERN" value="ss1_introduction_to_Java.bai_tap.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,11 +105,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ShowPrimesLessThan100" />
-        <item itemvalue="Application.ShowFirst20Primes" />
-        <item itemvalue="Application.DisplayGeometry" />
-        <item itemvalue="Application.DrawingMenu" />
-        <item itemvalue="Application.GreatestCommonFactor" />
+        <item itemvalue="Application.CurrencyConversion" />
+        <item itemvalue="Application.Hello" />
+        <item itemvalue="Application.BodyMassIndex" />
+        <item itemvalue="Application.ReadNumber" />
+        <item itemvalue="Application.CheckLeapYear" />
       </list>
     </recent_temporary>
   </component>
@@ -133,8 +122,7 @@
       <option name="presentableId" value="Default" />
       <updated>1640748236309</updated>
       <workItem from="1640748238020" duration="12330000" />
-      <workItem from="1640827856610" duration="10278000" />
-      <workItem from="1640846163571" duration="9649000" />
+      <workItem from="1640827856610" duration="10610000" />
     </task>
     <servers />
   </component>
