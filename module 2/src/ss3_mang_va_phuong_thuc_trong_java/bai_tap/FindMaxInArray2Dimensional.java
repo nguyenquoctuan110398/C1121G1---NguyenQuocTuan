@@ -2,7 +2,7 @@ package ss3_mang_va_phuong_thuc_trong_java.bai_tap;
 
 import java.util.Scanner;
 
-public class FindMaxInArray2d {
+public class FindMaxInArray2Dimensional {
     public static void main(String[] args) {
         int max;
         Scanner scanner = new Scanner(System.in);
