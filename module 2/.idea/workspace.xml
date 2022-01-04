@@ -5,10 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/bai_tap/SumOfColumn.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/bai_tap/CountTheNumberOfChar.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/bai_tap/SumOfDiagonal.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss3_mang_va_phuong_thuc_trong_java/bai_tap/FindMaxInArray2d.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/bai_tap/FindMaxInArray2d.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/bai_tap/FindMaxInArray2Dimensional.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,9 +51,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.SumOfColumn">
-    <configuration name="DeleteElementInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.DeleteElementInArray" />
+  <component name="RunManager" selected="Application.CountTheNumberOfStudents">
+    <configuration name="CountTheNumberOfChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.CountTheNumberOfChar" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
@@ -66,12 +65,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMaxInArray2Dimensional" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.FindMaxInArray2Dimensional" />
+    <configuration name="CountTheNumberOfStudents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.CountTheNumberOfStudents" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.*" />
+          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -81,19 +80,6 @@
     </configuration>
     <configuration name="FindMinInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.FindMinInArray" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MergeArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.MergeArray" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
@@ -118,13 +104,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SumOfDiagonal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.SumOfDiagonal" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountTheNumberOfStudents" />
+        <item itemvalue="Application.CountTheNumberOfChar" />
+        <item itemvalue="Application.SumOfDiagonal" />
         <item itemvalue="Application.SumOfColumn" />
         <item itemvalue="Application.FindMinInArray" />
-        <item itemvalue="Application.FindMaxInArray2Dimensional" />
-        <item itemvalue="Application.DeleteElementInArray" />
-        <item itemvalue="Application.MergeArray" />
       </list>
     </recent_temporary>
   </component>
@@ -141,6 +140,7 @@
       <workItem from="1640846163571" duration="10507000" />
       <workItem from="1640913968973" duration="7406000" />
       <workItem from="1640932373395" duration="9362000" />
+      <workItem from="1641259913048" duration="2751000" />
     </task>
     <servers />
   </component>
