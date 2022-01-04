@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/bai_tap/CountTheNumberOfChar.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/bai_tap/SumOfDiagonal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/ConvertTemperature.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/QuadraticEquation/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/QuadraticEquation/QuadraticEquation.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/StopWatch/StopWatch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/thuc_hanh/Rectangle/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/thuc_hanh/Rectangle/Rectangle.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -51,13 +55,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.CountTheNumberOfStudents">
-    <configuration name="CountTheNumberOfChar" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.CountTheNumberOfChar" />
+  <component name="RunManager" selected="Application.ConvertTemperature">
+    <configuration name="ConvertTemperature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.ConvertTemperature" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.*" />
+          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -78,12 +82,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindMinInArray" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.FindMinInArray" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.thuc_hanh.Rectangle.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.*" />
+          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.thuc_hanh.Rectangle.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -91,12 +95,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumOfColumn" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.SumOfColumn" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.QuadraticEquation.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.*" />
+          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.QuadraticEquation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,12 +108,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SumOfDiagonal" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.SumOfDiagonal" />
+    <configuration name="QuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.QuadraticEquation.QuadraticEquation" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.bai_tap.*" />
+          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.QuadraticEquation.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -119,11 +123,10 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ConvertTemperature" />
+        <item itemvalue="Application.QuadraticEquation" />
+        <item itemvalue="Application.Main" />
         <item itemvalue="Application.CountTheNumberOfStudents" />
-        <item itemvalue="Application.CountTheNumberOfChar" />
-        <item itemvalue="Application.SumOfDiagonal" />
-        <item itemvalue="Application.SumOfColumn" />
-        <item itemvalue="Application.FindMinInArray" />
       </list>
     </recent_temporary>
   </component>
@@ -140,7 +143,8 @@
       <workItem from="1640846163571" duration="10507000" />
       <workItem from="1640913968973" duration="7406000" />
       <workItem from="1640932373395" duration="9362000" />
-      <workItem from="1641259913048" duration="2751000" />
+      <workItem from="1641259913048" duration="7699000" />
+      <workItem from="1641283765035" duration="792000" />
     </task>
     <servers />
   </component>
