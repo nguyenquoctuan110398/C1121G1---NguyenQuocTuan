@@ -5,13 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss3_mang_va_phuong_thuc_trong_java/thuc_hanh/ConvertTemperature.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/QuadraticEquation/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/QuadraticEquation/QuadraticEquation.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/StopWatch/StopWatch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/thuc_hanh/Rectangle/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/thuc_hanh/Rectangle/Rectangle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/Student/MainMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/Student/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/Student/StudentManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/file_giai_thuat/SapXepMang.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/Fan/Fan.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/Fan/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/StopWatch/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/StopWatch/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/StopWatch/StopWatch.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +23,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Kotlin Class" />
         <option value="Class" />
       </list>
     </option>
@@ -55,7 +58,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.ConvertTemperature">
+  <component name="RunManager" selected="Application.Main (1)">
     <configuration name="ConvertTemperature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.ConvertTemperature" />
       <module name="module2" />
@@ -69,12 +72,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountTheNumberOfStudents" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.CountTheNumberOfStudents" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.StopWatch.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.*" />
+          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.StopWatch.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -82,12 +85,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.thuc_hanh.Rectangle.Main" />
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.Fan.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.thuc_hanh.Rectangle.*" />
+          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.Fan.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="demo_bt_them.Student.MainMenu" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="demo_bt_them.Student.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,12 +124,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="QuadraticEquation" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.QuadraticEquation.QuadraticEquation" />
+    <configuration name="SapXepMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="file_giai_thuat.SapXepMang" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.QuadraticEquation.*" />
+          <option name="PATTERN" value="file_giai_thuat.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,10 +139,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.MainMenu" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.SapXepMang" />
         <item itemvalue="Application.ConvertTemperature" />
-        <item itemvalue="Application.QuadraticEquation" />
-        <item itemvalue="Application.Main" />
-        <item itemvalue="Application.CountTheNumberOfStudents" />
       </list>
     </recent_temporary>
   </component>
@@ -144,7 +161,8 @@
       <workItem from="1640913968973" duration="7406000" />
       <workItem from="1640932373395" duration="9362000" />
       <workItem from="1641259913048" duration="7699000" />
-      <workItem from="1641283765035" duration="792000" />
+      <workItem from="1641283765035" duration="8290000" />
+      <workItem from="1641345498384" duration="11061000" />
     </task>
     <servers />
   </component>
