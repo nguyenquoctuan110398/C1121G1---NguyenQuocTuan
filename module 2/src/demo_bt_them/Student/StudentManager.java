@@ -4,10 +4,24 @@ import java.util.Scanner;
 
 public class StudentManager {
     Student[] studentList = new Student[100];
+//
+
+
     Scanner scanner = new Scanner(System.in);
 
-    public void add() {
+    public void create() {
+        Student student1 = new Student(1, "Tam",
+                "DN", "12/12/1998", "C1121G1", "BK");
+        Student student2 = new Student(2, "Tuan",
+                "QN", "12/4/1994", "C1121G1", "KT");
+        Student student3 = new Student(1, "Chien",
+                "HA", "1/4/1995", "C1121G1", "NN");
+        studentList[0] = student1;
+        studentList[1] = student2;
+        studentList[2] = student3;
+    }
 
+    public void add() {
         System.out.println("Enter id: ");
         int id = Integer.parseInt(scanner.nextLine());
         System.out.println("Enter name: ");
@@ -61,6 +75,61 @@ public class StudentManager {
                 break;
             }
         }
-
     }
+
+    public void edit() {
+        boolean check = false;
+        System.out.println("Enter id edit: ");
+
+        int idEdit = Integer.parseInt(scanner.nextLine());
+        for (int i = 0; i < studentList.length; i++) {
+            System.out.println("Vòng lặp " + (i + 1));
+            System.out.println("Id: " + i);
+            if (studentList[i] == null) {
+                break;
+            }
+            if (studentList[i].getId() == idEdit) {
+                check = true;
+            }
+            if (check) {
+                System.out.println("1. Edit name\n" +
+                        "2. Edit address\n" +
+                        "3. Edit birthday\n" +
+                        "4. Edit class name\n" +
+                        "5. Edit school\n" +
+                        "6. Exit\n");
+                int chooseEdit = Integer.parseInt(scanner.nextLine());
+                switch (chooseEdit) {
+                    case 1:
+                        String newName = scanner.nextLine();
+                        studentList[i].setName(newName);
+                        break;
+                    case 2:
+                        String newAddress = scanner.nextLine();
+                        studentList[i].setAddress(newAddress);
+                        break;
+                    case 3:
+                        String newBirthday = scanner.nextLine();
+                        studentList[i].setBirthday(newBirthday);
+                        break;
+                    case 4:
+                        String newClassName = scanner.nextLine();
+                        studentList[i].setClassName(newClassName);
+                        break;
+                    case 5:
+                        String newSchool = scanner.nextLine();
+                        studentList[i].setSchool(newSchool);
+                        break;
+                    case 6:
+                        break;
+                }
+            } else {
+                break;
+            }
+        }
+    }
+
+//    public void search() {
+//
+//    }
 }

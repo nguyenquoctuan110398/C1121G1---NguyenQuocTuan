@@ -5,15 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/Student/MainMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/Student/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/Student/StudentManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/file_giai_thuat/SapXepMang.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/Fan/Fan.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/Fan/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/StopWatch/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/bai_tap/AccessModifier/Circle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/bai_tap/AccessModifier/TestCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/bai_tap/WriteOnlyClassesInJava/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/bai_tap/WriteOnlyClassesInJava/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/thuc_hanh/StaticMethod/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/thuc_hanh/StaticMethod/TestStaticMethod.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/thuc_hanh/StaticProperty/Car.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/thuc_hanh/StaticProperty/TestStaticProperty.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/StopWatch/StopWatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss4_lop_va_doi_tuong_trong_java/bai_tap/StopWatch/StopWatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/demo_bt_them/Student/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/demo_bt_them/Student/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/demo_bt_them/Student/StudentManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/demo_bt_them/Student/StudentManager.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo_bt_them/Student/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo_bt_them/Student/MainMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo_bt_them/Student/StudentManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/demo_bt_them/Student/StudentManager.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,46 +62,7 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="ConvertTemperature" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.ConvertTemperature" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss3_mang_va_phuong_thuc_trong_java.thuc_hanh.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.StopWatch.Main" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.StopWatch.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.Fan.Main" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss4_lop_va_doi_tuong_trong_java.bai_tap.Fan.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.TestCircle">
     <configuration name="MainMenu" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="demo_bt_them.Student.MainMenu" />
       <module name="module2" />
@@ -124,12 +89,51 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SapXepMang" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="file_giai_thuat.SapXepMang" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_access_modifier_static_method_static_property.bai_tap.WriteOnlyClassesInJava.Test" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="file_giai_thuat.*" />
+          <option name="PATTERN" value="ss5_access_modifier_static_method_static_property.bai_tap.WriteOnlyClassesInJava.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCircle" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_access_modifier_static_method_static_property.bai_tap.AccessModifier.TestCircle" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss5_access_modifier_static_method_static_property.bai_tap.AccessModifier.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticMethod" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_access_modifier_static_method_static_property.thuc_hanh.StaticMethod.TestStaticMethod" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss5_access_modifier_static_method_static_property.thuc_hanh.StaticMethod.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestStaticProperty" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss5_access_modifier_static_method_static_property.thuc_hanh.StaticProperty.TestStaticProperty" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss5_access_modifier_static_method_static_property.thuc_hanh.StaticProperty.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -139,11 +143,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.TestCircle" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TestStaticProperty" />
+        <item itemvalue="Application.TestStaticMethod" />
         <item itemvalue="Application.MainMenu" />
-        <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.SapXepMang" />
-        <item itemvalue="Application.ConvertTemperature" />
       </list>
     </recent_temporary>
   </component>
@@ -162,7 +166,7 @@
       <workItem from="1640932373395" duration="9362000" />
       <workItem from="1641259913048" duration="7699000" />
       <workItem from="1641283765035" duration="8290000" />
-      <workItem from="1641345498384" duration="11061000" />
+      <workItem from="1641345498384" duration="21534000" />
     </task>
     <servers />
   </component>

@@ -6,6 +6,9 @@ public class MainMenu {
     public static void main(String[] args) {
         StudentManager studentManager = new StudentManager();
         Scanner scanner = new Scanner(System.in);
+
+        studentManager.create();
+
         int chooseMenu;
         boolean flag = true;
 
@@ -26,6 +29,7 @@ public class MainMenu {
                     break;
                 case 3:
                     System.out.println("Edit");
+                    studentManager.edit();
                     break;
                 case 4:
                     studentManager.delete();
