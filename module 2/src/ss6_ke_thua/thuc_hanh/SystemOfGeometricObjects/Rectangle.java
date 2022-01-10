@@ -1,6 +1,8 @@
 package ss6_ke_thua.thuc_hanh.SystemOfGeometricObjects;
 
-public class Rectangle extends Shape {
+import ss7_abstract_class_and_interface.bai_tap.InterfaceResizeableForGeometry.Resizeable;
+
+public class Rectangle extends Shape implements Resizeable {
     private double width = 1.0;
     private double length = 1.0;
 
@@ -36,7 +38,7 @@ public class Rectangle extends Shape {
     }
 
     public double getArea() {
-        return this.width * this.length;
+        return Math.round((this.width * this.length)*100)/100;
     }
 
     public double getPerimeter() {
@@ -48,7 +50,15 @@ public class Rectangle extends Shape {
                 + getWidth()
                 + " and length="
                 + getLength()
+                + ", area=" + getArea()
+                + ", perimeter=" + getPerimeter()
                 + ", which is a subclass of "
                 + super.toString();
+    }
+
+    @Override
+    public void resize(double percent) {
+        setWidth(getWidth() * percent);
+        setLength(getLength() * percent);
     }
 }

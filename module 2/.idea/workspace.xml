@@ -5,31 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/CircleAndCylinder/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/CircleAndCylinder/CircleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/CircleAndCylinder/Cylinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/CircleAndCylinder/CylinderTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/Point2DAndPoint3D/Point2D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/Point2DAndPoint3D/Point2DTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/Point2DAndPoint3D/Point3D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/Point2DAndPoint3D/Point3DTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/PointAndMoveablePoint/MovablePoint.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/PointAndMoveablePoint/MovablePointTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/PointAndMoveablePoint/Point.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/PointAndMoveablePoint/PointTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/Triangle/Triangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/bai_tap/Triangle/TriangleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Circle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/CircleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Rectangle.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/RectangleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Shape.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/ShapeTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Square.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/SquareTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/ChienBinh.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/ChienBinhAnhDung.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/ChienBinhDepTrai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/ChienBinhThongThai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/ConNguoi.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/LuyenCong.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/LuyenCongPhepThuat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/PhepThuat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/demo_abstract/Vua.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/InterfaceColorableForGeometry/Colorable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/InterfaceColorableForGeometry/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/InterfaceResizeableForGeometry/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/InterfaceResizeableForGeometry/Resizeable.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/AnimalAndInterfaceEdible/AbstractAndInterfaceTests.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/AnimalAndInterfaceEdible/Animal.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/AnimalAndInterfaceEdible/Chicken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/AnimalAndInterfaceEdible/Edible.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/AnimalAndInterfaceEdible/Fruit.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/AnimalAndInterfaceEdible/Orange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/AnimalAndInterfaceEdible/Tiger.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/InterfaceComparableForGeometry/ComparableCircle.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/InterfaceComparableForGeometry/ComparableCircleTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/InterfaceComparableToCompareGeometry/CircleComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/thuc_hanh/InterfaceComparableToCompareGeometry/CircleComparatorTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss5_access_modifier_static_method_static_property/bai_tap/AccessModifier/TestCircle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss5_access_modifier_static_method_static_property/bai_tap/AccessModifier/TestCircle.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/bai_tap/AccessModifier/TestCircle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss5_access_modifier_static_method_static_property/bai_tap/AccessModifier/TestCircle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Circle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Circle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Rectangle.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Rectangle.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Square.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Square.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Circle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Circle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Rectangle.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Rectangle.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Square.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss6_ke_thua/thuc_hanh/SystemOfGeometricObjects/Square.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +47,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -74,13 +82,13 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="preferences.editor" />
   </component>
-  <component name="RunManager" selected="Application.TriangleTest">
-    <configuration name="MovablePointTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_ke_thua.bai_tap.PointAndMoveablePoint.MovablePointTest" />
+  <component name="RunManager" selected="Application.Main (1)">
+    <configuration name="AbstractAndInterfaceTests" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.thuc_hanh.AnimalAndInterfaceEdible.AbstractAndInterfaceTests" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_ke_thua.bai_tap.PointAndMoveablePoint.*" />
+          <option name="PATTERN" value="ss7_abstract_class_and_interface.thuc_hanh.AnimalAndInterfaceEdible.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -88,12 +96,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Point2DTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_ke_thua.bai_tap.Point2DAndPoint3D.Point2DTest" />
+    <configuration name="CircleComparatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.thuc_hanh.InterfaceComparableToCompareGeometry.CircleComparatorTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_ke_thua.bai_tap.Point2DAndPoint3D.*" />
+          <option name="PATTERN" value="ss7_abstract_class_and_interface.thuc_hanh.InterfaceComparableToCompareGeometry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -101,12 +109,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Point3DTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_ke_thua.bai_tap.Point2DAndPoint3D.Point3DTest" />
+    <configuration name="CircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.CircleTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_ke_thua.bai_tap.Point2DAndPoint3D.*" />
+          <option name="PATTERN" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -114,12 +122,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PointTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_ke_thua.bai_tap.PointAndMoveablePoint.PointTest" />
+    <configuration name="ComparableCircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.thuc_hanh.InterfaceComparableForGeometry.ComparableCircleTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_ke_thua.bai_tap.PointAndMoveablePoint.*" />
+          <option name="PATTERN" value="ss7_abstract_class_and_interface.thuc_hanh.InterfaceComparableForGeometry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,12 +135,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TriangleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss6_ke_thua.bai_tap.Triangle.TriangleTest" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss6_ke_thua.bai_tap.Triangle.*" />
+          <option name="PATTERN" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.InterfaceResizeableForGeometry.Main" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -142,11 +163,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.TriangleTest" />
-        <item itemvalue="Application.MovablePointTest" />
-        <item itemvalue="Application.Point3DTest" />
-        <item itemvalue="Application.PointTest" />
-        <item itemvalue="Application.Point2DTest" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.CircleTest" />
+        <item itemvalue="Application.CircleComparatorTest" />
+        <item itemvalue="Application.ComparableCircleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -167,6 +188,8 @@
       <workItem from="1641283765035" duration="8290000" />
       <workItem from="1641345498384" duration="22765000" />
       <workItem from="1641537515924" duration="9710000" />
+      <workItem from="1641780127397" duration="6318000" />
+      <workItem from="1641796440797" duration="8765000" />
     </task>
     <servers />
   </component>
