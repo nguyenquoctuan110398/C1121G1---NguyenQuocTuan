@@ -5,15 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/mo_hinh_mvc/model/model/Person.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/demo_bt_them/mo_hinh_mvc/model/model/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/bai_tap/Refactoring/TennisGame.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/thuc_hanh/MethodSeparation/Cylinder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/thuc_hanh/RenamingVariablesAndSeparatingConstants/Calculator.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss8_clean_code_refactoring/thuc_hanh/SplitVariable/FizzBuzz.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_DSA_danh_sach/bai_tap/ArrayListIsMethodsByLibrary/CotrollerStudent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_DSA_danh_sach/bai_tap/ArrayListIsMethodsByLibrary/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_DSA_danh_sach/bai_tap/ArrayListIsMethodsByLibrary/MyListTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_DSA_danh_sach/bai_tap/ArrayListIsMethodsByLibrary/Students.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_DSA_danh_sach/bai_tap/ArrayListIsMethodsByLibrary/TestMyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_DSA_danh_sach/thuc_hanh/ImplementASimpleListClass/MyList.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss10_DSA_danh_sach/thuc_hanh/ImplementASimpleListClass/MyListTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss7_abstract_class_and_interface/bai_tap/InterfaceResizeableForGeometry/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss7_abstract_class_and_interface/bai_tap/InterfaceResizeableForGeometry/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/InterfaceResizeableForGeometry/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss7_abstract_class_and_interface/bai_tap/InterfaceResizeableForGeometry/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo_bt_them/mo_hinh_mvc/model/model/Person.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/demo_bt_them/mo_hinh_mvc/model/model/Student.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,23 +58,10 @@
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="settings.editor.selected.configurable" value="preferences.editor" />
+    <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
-  <component name="RunManager" selected="Application.Main">
-    <configuration name="CircleComparatorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.thuc_hanh.InterfaceComparableToCompareGeometry.CircleComparatorTest" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss7_abstract_class_and_interface.thuc_hanh.InterfaceComparableToCompareGeometry.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CircleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.MyListTest">
+    <configuration name="CircleTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.CircleTest" />
       <module name="module2" />
       <extension name="coverage">
@@ -125,13 +113,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MyListTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss10_DSA_danh_sach.thuc_hanh.ImplementASimpleListClass.MyListTest" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss10_DSA_danh_sach.thuc_hanh.ImplementASimpleListClass.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MyListTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.CircleTest" />
-        <item itemvalue="Application.CircleComparatorTest" />
       </list>
     </recent_temporary>
   </component>
@@ -157,6 +157,8 @@
       <workItem from="1641866642425" duration="1806000" />
       <workItem from="1641886362120" duration="338000" />
       <workItem from="1641886781998" duration="6687000" />
+      <workItem from="1641969140809" duration="601000" />
+      <workItem from="1641969818441" duration="6530000" />
     </task>
     <servers />
   </component>
@@ -174,5 +176,19 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/demo_bt_them/mo_hinh_mvc/model/model/Student.java</url>
+          <line>5</line>
+          <properties class="demo_bt_them.mo_hinh_mvc.model.model.Student" method="&lt;init&gt;">
+            <option name="EMULATED" value="true" />
+          </properties>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
