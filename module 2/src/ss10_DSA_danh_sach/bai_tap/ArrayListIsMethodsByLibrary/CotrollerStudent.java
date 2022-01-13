@@ -14,7 +14,7 @@ public class CotrollerStudent {
         studentMyArrayList.add(student2);
         studentMyArrayList.add(student3);
         studentMyArrayList.add(student4);
-        
+
         studentMyArrayList.add(student5, 4);
         System.out.println(studentMyArrayList.size());
         studentMyArrayList.clean();
