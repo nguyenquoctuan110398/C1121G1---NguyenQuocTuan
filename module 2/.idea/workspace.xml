@@ -5,18 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/CheckBracketsInExpressionsUsingStack/CheckBracketsInExpressionsUsingStack.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/controller/ProductManager.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/model/Product.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/model/ProductsSortedByPriceAscending.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/model/ProductsSortedByPriceDescending.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/IProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/DistinguishHashMapAndHashSet/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/DistinguishHashMapAndHashSet/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge/HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/controller/QuanLiPhuongTien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/HangSanXuat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/Oto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/PhuongTien.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/XeMay.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/XeTai.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/IHangSanXuat.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/IPhuongTienService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/impl/HangSanXuatService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/impl/OtoService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/impl/XeMayService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/impl/XeTaiService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/s11_stack_queue/bai_tap/CheckingPalindromeStringsUsingQueue/CheckingPalindromeStringsUsingQueue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/s11_stack_queue/bai_tap/CheckingPalindromeStringsUsingQueue/CheckingPalindromeStringsUsingQueue.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,6 +32,7 @@
         <option value="Kotlin Class" />
         <option value="Interface" />
         <option value="Class" />
+        <option value="AnnotationType" />
       </list>
     </option>
   </component>
@@ -62,33 +66,12 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="settings.editor.selected.configurable" value="project.scopes" />
   </component>
-  <component name="RunManager" selected="Application.ProductManager">
-    <configuration name="CheckBracketsInExpressionsUsingStack" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.bai_tap.CheckBracketsInExpressionsUsingStack.CheckBracketsInExpressionsUsingStack" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="s11_stack_queue.bai_tap.CheckBracketsInExpressionsUsingStack.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="CheckingPalindromeStringsUsingQueue" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.bai_tap.CheckingPalindromeStringsUsingQueue.CheckingPalindromeStringsUsingQueue" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="s11_stack_queue.bai_tap.CheckingPalindromeStringsUsingQueue.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="bai_tap_them.service.impl" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.QuanLiPhuongTien">
     <configuration name="CircleTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.CircleTest" />
       <module name="module2" />
@@ -102,12 +85,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ConvertFromDecimalToBinary" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.bai_tap.ConvertFromDecimalToBinary.ConvertFromDecimalToBinary" />
+    <configuration name="HangSanXuat" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap_them.model.HangSanXuat" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="s11_stack_queue.bai_tap.ConvertFromDecimalToBinary.*" />
+          <option name="PATTERN" value="bai_tap_them.model.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -115,12 +98,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.thuc_tap.HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge.HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge" />
+    <configuration name="HangSanXuatService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap_them.service.impl.HangSanXuatService" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.thuc_tap.HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge.*" />
+          <option name="PATTERN" value="bai_tap_them.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -128,12 +111,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProductManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.controller.ProductManager" />
+    <configuration name="ProductService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.service.impl.ProductService" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.controller.*" />
+          <option name="PATTERN" value="ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.service.impl.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="QuanLiPhuongTien" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap_them.controller.QuanLiPhuongTien" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_tap_them.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="XeTaiService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="bai_tap_them.service.impl.XeTaiService" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="bai_tap_them.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -143,11 +152,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.ProductManager" />
-        <item itemvalue="Application.HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge" />
-        <item itemvalue="Application.CheckBracketsInExpressionsUsingStack" />
-        <item itemvalue="Application.CheckingPalindromeStringsUsingQueue" />
-        <item itemvalue="Application.ConvertFromDecimalToBinary" />
+        <item itemvalue="Application.QuanLiPhuongTien" />
+        <item itemvalue="Application.XeTaiService" />
+        <item itemvalue="Application.HangSanXuatService" />
+        <item itemvalue="Application.HangSanXuat" />
+        <item itemvalue="Application.ProductService" />
       </list>
     </recent_temporary>
   </component>
@@ -176,7 +185,9 @@
       <workItem from="1641969140809" duration="601000" />
       <workItem from="1641969818441" duration="6531000" />
       <workItem from="1642036064050" duration="13735000" />
-      <workItem from="1642123746226" duration="13076000" />
+      <workItem from="1642123746226" duration="20296000" />
+      <workItem from="1642243074481" duration="12318000" />
+      <workItem from="1642293890162" duration="6663000" />
     </task>
     <servers />
   </component>

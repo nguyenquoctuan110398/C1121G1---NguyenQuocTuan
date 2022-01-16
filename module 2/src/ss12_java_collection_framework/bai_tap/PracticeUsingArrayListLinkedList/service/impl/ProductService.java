@@ -71,6 +71,8 @@ public class ProductService implements IProductService {
         for (Product product:productArrayList){
             if ((product.getName().toLowerCase()).contains(nameToSearch)){
                 System.out.println(product);
+            } else {
+                System.out.println("Can not find!!!");
             }
         }
     }
