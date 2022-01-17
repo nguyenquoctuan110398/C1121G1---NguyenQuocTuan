@@ -5,21 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/controller/QuanLiPhuongTien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/HangSanXuat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/Oto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/PhuongTien.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/XeMay.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/model/XeTai.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/IHangSanXuat.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/IPhuongTienService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/impl/HangSanXuatService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/impl/OtoService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/impl/XeMayService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/bai_tap_them/service/impl/XeTaiService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/s11_stack_queue/bai_tap/CountWordsInString/CountWordsInString.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/AgeComparator.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/Student.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,8 +21,8 @@
       <list>
         <option value="Kotlin Class" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="AnnotationType" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -71,13 +61,26 @@
       <recent name="bai_tap_them.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.QuanLiPhuongTien">
+  <component name="RunManager" selected="Application.CountWordsInString">
     <configuration name="CircleTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.CircleTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="CountWordsInString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="s11_stack_queue.bai_tap.CountWordsInString.CountWordsInString" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="s11_stack_queue.bai_tap.CountWordsInString.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,19 +107,6 @@
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="bai_tap_them.service.impl.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="ProductService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.service.impl.ProductService" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.service.impl.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -152,11 +142,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.CountWordsInString" />
         <item itemvalue="Application.QuanLiPhuongTien" />
         <item itemvalue="Application.XeTaiService" />
         <item itemvalue="Application.HangSanXuatService" />
         <item itemvalue="Application.HangSanXuat" />
-        <item itemvalue="Application.ProductService" />
       </list>
     </recent_temporary>
   </component>
@@ -188,6 +178,7 @@
       <workItem from="1642123746226" duration="20296000" />
       <workItem from="1642243074481" duration="12318000" />
       <workItem from="1642293890162" duration="6663000" />
+      <workItem from="1642389691771" duration="8455000" />
     </task>
     <servers />
   </component>
