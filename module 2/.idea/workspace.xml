@@ -5,33 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss13_thuat_toan_tim_kiem/bai_tap/StringAscendingWithMaxLength.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss13_thuat_toan_tim_kiem/thuc_hanh/BinarySearchAlgorithmSettings/BinarySearch.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss13_thuat_toan_tim_kiem/thuc_hanh/BinarySearchAlgorithmSettings/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/bai_tap/InsertionSortIllustration/InsertionSortByStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/bai_tap/InsertionSortIllustration/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/bai_tap/InsertionSortSettings/InsertionSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/bai_tap/InsertionSortSettings/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/BubbleSortAlgorithmIllustration/BubbleSortByStep.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/BubbleSortAlgorithmIllustration/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/BubbleSortAlgorithmSettings/BubbleSort.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/BubbleSortAlgorithmSettings/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/SelectSortAlgorithmSettings/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss14_thuat_toan_sap_xep/thuc_hanh/SelectSortAlgorithmSettings/SelectionSort.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/IllegalTriangleException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/ArrayIndexOutOfBoundsExceptionUsing/ArrayExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/ArrayIndexOutOfBoundsExceptionUsing/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/LinearEquationResolver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/NumberFormatExceptionUsing/CalculationExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/s11_stack_queue/bai_tap/CountWordsInString/CountWordsInString.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/s11_stack_queue/bai_tap/CountWordsInString/CountWordsInString.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/thuc_tap/DistinguishHashMapAndHashSet/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/thuc_tap/DistinguishHashMapAndHashSet/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/thuc_tap/HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge/HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/AgeComparator.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/Student.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/DistinguishHashMapAndHashSet/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/DistinguishHashMapAndHashSet/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/DistinguishHashMapAndHashSet/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/DistinguishHashMapAndHashSet/Student.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge/HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge/HashMapLinkedHashMapTreeMapToSaveAListOfStudentsByAge.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/AgeComparator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/SortWithComparableAndComparator/AgeComparator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/SortWithComparableAndComparator/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_tap/SortWithComparableAndComparator/Student.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/thuc_hanh/SortWithComparableAndComparator/Student.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss14_thuat_toan_sap_xep/bai_tap/InsertionSortSettings/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss14_thuat_toan_sap_xep/bai_tap/InsertionSortSettings/InsertionSort.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +64,52 @@
       <recent name="bai_tap_them.service.impl" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main (2)">
+    <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss15_xu_li_ngoai_le.thuc_hanh.NumberFormatExceptionUsing.CalculationExample" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss15_xu_li_ngoai_le.thuc_hanh.NumberFormatExceptionUsing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CircleTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.CircleTest" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="ss7_abstract_class_and_interface.bai_tap.InterfaceColorableForGeometry.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss15_xu_li_ngoai_le.thuc_hanh.ArrayIndexOutOfBoundsExceptionUsing.Main" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss15_xu_li_ngoai_le.thuc_hanh.ArrayIndexOutOfBoundsExceptionUsing.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss15_xu_li_ngoai_le.bai_tap.IllegalTriangleExceptionUsing.Main" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss15_xu_li_ngoai_le.bai_tap.IllegalTriangleExceptionUsing.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -112,6 +132,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.CalculationExample" />
         <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
@@ -148,6 +170,8 @@
       <workItem from="1642479470298" duration="1471000" />
       <workItem from="1642489071736" duration="8473000" />
       <workItem from="1642577159578" duration="8103000" />
+      <workItem from="1642653450583" duration="2205000" />
+      <workItem from="1642662638360" duration="4020000" />
     </task>
     <servers />
   </component>
@@ -176,6 +200,16 @@
             <option name="EMULATED" value="true" />
           </properties>
           <option name="timeStamp" value="1" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/LinearEquationResolver.java</url>
+          <line>12</line>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/LinearEquationResolver.java</url>
+          <line>15</line>
+          <option name="timeStamp" value="4" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
