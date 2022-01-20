@@ -5,14 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/IllegalTriangleException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/ArrayIndexOutOfBoundsExceptionUsing/ArrayExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/ArrayIndexOutOfBoundsExceptionUsing/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/LinearEquationResolver.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/thuc_hanh/NumberFormatExceptionUsing/CalculationExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss14_thuat_toan_sap_xep/bai_tap/InsertionSortSettings/InsertionSort.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss14_thuat_toan_sap_xep/bai_tap/InsertionSortSettings/InsertionSort.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,7 +166,8 @@
       <workItem from="1642489071736" duration="8473000" />
       <workItem from="1642577159578" duration="8103000" />
       <workItem from="1642653450583" duration="2205000" />
-      <workItem from="1642662638360" duration="4020000" />
+      <workItem from="1642662638360" duration="6992000" />
+      <workItem from="1642671011888" duration="1234000" />
     </task>
     <servers />
   </component>
