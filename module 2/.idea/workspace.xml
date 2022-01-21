@@ -5,9 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/ReadFileCSV/Country.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/ReadFileCSV/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/bai_tap/ReadFileCSV/country.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/FileTheMaxValueWriteToFile/FindMaxValue.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/FileTheMaxValueWriteToFile/ReadAndWriteFile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/SumOfNumberInTextFile/ReadFileExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/ss16_io_text_file/thuc_hanh/SumOfNumberInTextFile/file.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss15_xu_li_ngoai_le/bai_tap/IllegalTriangleExceptionUsing/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +64,7 @@
       <recent name="bai_tap_them.service.impl" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Main (3)">
     <configuration name="CalculationExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss15_xu_li_ngoai_le.thuc_hanh.NumberFormatExceptionUsing.CalculationExample" />
       <module name="module2" />
@@ -112,12 +117,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss14_thuat_toan_sap_xep.thuc_hanh.BubbleSortAlgorithmSettings.Main" />
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.bai_tap.ReadFileCSV.Main" />
       <module name="module2" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="ss14_thuat_toan_sap_xep.thuc_hanh.BubbleSortAlgorithmSettings.*" />
+          <option name="PATTERN" value="ss16_io_text_file.bai_tap.ReadFileCSV.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReadFileExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss16_io_text_file.thuc_hanh.SumOfNumberInTextFile.ReadFileExample" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss16_io_text_file.thuc_hanh.SumOfNumberInTextFile.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -127,6 +145,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main (3)" />
+        <item itemvalue="Application.ReadFileExample" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.CalculationExample" />
         <item itemvalue="Application.Main (1)" />
@@ -168,6 +188,7 @@
       <workItem from="1642653450583" duration="2205000" />
       <workItem from="1642662638360" duration="6992000" />
       <workItem from="1642671011888" duration="1234000" />
+      <workItem from="1642747381020" duration="6457000" />
     </task>
     <servers />
   </component>
