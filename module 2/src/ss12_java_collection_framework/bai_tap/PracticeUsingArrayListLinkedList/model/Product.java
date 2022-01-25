@@ -1,6 +1,7 @@
 package ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.model;
 
 import java.io.Serializable;
+import java.util.Objects;
 
 public class Product implements Serializable {
     private int id;
@@ -9,6 +10,10 @@ public class Product implements Serializable {
 
     public Product() {
 
+    }
+
+    public Product(int id) {
+        this.id = id;
     }
 
     public Product(int id, String name, double price) {
@@ -49,4 +54,13 @@ public class Product implements Serializable {
                 ", price=" + price +
                 '}';
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Product product = (Product) o;
+        return id == product.id;
+    }
+
 }

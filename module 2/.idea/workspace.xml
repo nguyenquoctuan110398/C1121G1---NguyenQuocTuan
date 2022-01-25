@@ -5,27 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6826b2a-cdec-4d6c-8a78-7d97a7b02568" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/util/ReadAndWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/util/fileProduct.csv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/util/fileProduct.dat" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/thuc_hanh/CopyFile/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/thuc_hanh/ReadAndWriteListStudent/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/thuc_hanh/ReadAndWriteListStudent/ReadAndWriteFile.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss17_binary_file_serialization/thuc_hanh/ReadAndWriteListStudent/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/ValidateClassName/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/bai_tap/ValidatePhone/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/CrawlSongList/CrawlSongExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/ValidateAccount/AccountExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/ValidateAccount/AccountExampleTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/ValidateEmail/EmailExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/ss19_string_regex/thuc_hanh/ValidateEmail/EmailExampleTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/META-INF/module2.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/controller/ProductManager.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/controller/ProductManager.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/model/Product.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/model/Product.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/controller/ProductManager.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/controller/ProductManager.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/util/fileProduct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/module2/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/util/fileProduct.csv" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/model/Product.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/model/Product.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService1.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/service/impl/ProductService1.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/util/fileProduct.csv" beforeDir="false" afterPath="$PROJECT_DIR$/src/ss12_java_collection_framework/bai_tap/PracticeUsingArrayListLinkedList/util/fileProduct.csv" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -80,7 +67,7 @@
       <recent name="F:\File\Code Gym\module\module 2\src\ss17_binary_file_serialization\thuc_hanh\ReadAndWriteListStudent" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.ProductManager">
     <configuration name="AccountExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss19_string_regex.thuc_hanh.ValidateAccount.AccountExampleTest" />
       <module name="module2" />
@@ -120,19 +107,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="EmailExampleTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="ss19_string_regex.thuc_hanh.ValidateEmail.EmailExampleTest" />
-      <module name="module2" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="ss19_string_regex.thuc_hanh.ValidateEmail.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="ss19_string_regex.bai_tap.ValidateClassName.Main" />
       <module name="module2" />
@@ -159,13 +133,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ProductManager" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.controller.ProductManager" />
+      <module name="module2" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="ss12_java_collection_framework.bai_tap.PracticeUsingArrayListLinkedList.controller.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.ProductManager" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main (1)" />
         <item itemvalue="Application.CrawlSongExample" />
         <item itemvalue="Application.AccountExampleTest" />
-        <item itemvalue="Application.EmailExampleTest" />
       </list>
     </recent_temporary>
   </component>
@@ -207,7 +194,7 @@
       <workItem from="1642747381020" duration="7808000" />
       <workItem from="1643009580018" duration="9361000" />
       <workItem from="1643083023489" duration="4020000" />
-      <workItem from="1643096815800" duration="1921000" />
+      <workItem from="1643096815800" duration="5808000" />
     </task>
     <servers />
   </component>
