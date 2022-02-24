@@ -34,10 +34,11 @@ primary key(sub_id)
 -- Tạo bảng mark
 create table mark(
 mark_id int not null auto_increment,
-sub_id int not null unique,
-student_id int not null unique,
+sub_id int not null,
+student_id int not null,
 mark float default 0 check(0<=mark<=100),
 exam_times tinyint default 1,
+unique(sub_id, student_id),
 primary key(mark_id),
 foreign key(sub_id) references `subject`(sub_id),
 foreign key(student_id) references student(student_id)
