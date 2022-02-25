@@ -20,7 +20,6 @@ create table `order`(
 o_id int not null auto_increment,
 c_id int,
 o_date datetime not null,
-o_total_price double not null,
 primary key(o_id),
 foreign key(c_id) references customer(c_id)
 );
