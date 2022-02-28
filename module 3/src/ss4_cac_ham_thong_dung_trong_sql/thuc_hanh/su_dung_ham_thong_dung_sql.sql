@@ -20,4 +20,4 @@ having avg(mark.mark) > 15;
 select student.student_id, student.student_name, avg(mark.mark)
 from student join mark on student.student_id = mark.student_id
 group by student.student_id, student.student_name
-having avg(mark.mark) > 15;
+having avg(mark.mark) >= all (select avg(mark.mark) from mark group by mark.student_id);
