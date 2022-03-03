@@ -8,5 +8,6 @@ nhan_vien.so_dien_thoai, nhan_vien.dia_chi from hop_dong
 join nhan_vien on hop_dong.ma_nhan_vien = nhan_vien.ma_nhan_vien
 join bo_phan on nhan_vien.ma_bo_phan = bo_phan.ma_bo_phan
 join trinh_do on nhan_vien.ma_trinh_do = trinh_do.ma_trinh_do
+where year(hop_dong.ngay_lam_hop_dong) between 2020 and 2021
 group by nhan_vien.ma_nhan_vien
 having count(hop_dong.ma_hop_dong) <= 3;

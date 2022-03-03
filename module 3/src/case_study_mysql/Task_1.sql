@@ -1,5 +1,5 @@
 create database case_study;
-
+-- drop database case_study;
 use case_study;
 
 -- Tạo và thêm dữ liệu vào bảng vi_tri

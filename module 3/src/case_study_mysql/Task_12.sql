@@ -8,12 +8,11 @@ use case_study;
 select hop_dong.ma_hop_dong, nhan_vien.ho_ten as ho_ten_nhan_vien, khach_hang.ho_ten as ho_ten_khach_hang,
 khach_hang.so_dien_thoai, dich_vu.ma_dich_vu, dich_vu.ten_dich_vu,
 sum(ifnull(hop_dong_chi_tiet.so_luong, 0)) as so_luong_dich_vu_di_kem, hop_dong.tien_dat_coc
-from dich_vu_di_kem
-join hop_dong_chi_tiet on dich_vu_di_kem.ma_dich_vu_di_kem = hop_dong_chi_tiet.ma_dich_vu_di_kem
+from  hop_dong_chi_tiet
 right join hop_dong on hop_dong_chi_tiet.ma_hop_dong = hop_dong.ma_hop_dong
-join dich_vu on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
-join nhan_vien on hop_dong.ma_nhan_vien = nhan_vien.ma_nhan_vien
-join khach_hang on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
+right join dich_vu on hop_dong.ma_dich_vu = dich_vu.ma_dich_vu
+right join nhan_vien on hop_dong.ma_nhan_vien = nhan_vien.ma_nhan_vien
+right join khach_hang on hop_dong.ma_khach_hang = khach_hang.ma_khach_hang
 where hop_dong.ma_hop_dong in 
 (select hop_dong.ma_hop_dong from hop_dong
 where year(hop_dong.ngay_lam_hop_dong) = '2020' and month(hop_dong.ngay_lam_hop_dong) between 10 and 12)
