@@ -1,0 +1,20 @@
+a {
+    text-decoration: none;
+    color: blue;
+}
+
+p#TieuDePhu {
+    font-family: Arial;
+    font-size: 120%;
+    text-align: left;
+}
+
+span {
+    color: blueviolet;
+}
+
+p.abc {
+    font-family: Arial;
+    font-size: 120%;
+    text-indent: 50px;
+}
