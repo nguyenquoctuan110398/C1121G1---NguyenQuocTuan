@@ -3,10 +3,13 @@ a {
     color: blue;
 }
 
+ul>li{display:inline-block;}
+
 p#TieuDePhu {
     font-family: Arial;
     font-size: 120%;
     text-align: left;
+
 }
 
 span {

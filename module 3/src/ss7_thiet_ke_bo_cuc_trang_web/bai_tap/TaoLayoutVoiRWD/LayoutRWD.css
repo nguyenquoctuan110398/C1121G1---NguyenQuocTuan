@@ -1,0 +1,148 @@
+.col-1 {
+    width: 8.33%;
+}
+
+.col-2 {
+    width: 16.66%;
+}
+
+.col-3 {
+    width: 25%;
+}
+
+.col-4 {
+    width: 33.33%;
+}
+
+.col-5 {
+    width: 41.66%;
+}
+
+.col-6 {
+    width: 50%;
+}
+
+.col-7 {
+    width: 58.33%;
+}
+
+.col-8 {
+    width: 66.66%;
+}
+
+.col-9 {
+    width: 75%;
+}
+
+.col-10 {
+    width: 83.33%;
+}
+
+.col-11 {
+    width: 91.66%;
+}
+
+.col-12 {
+    width: 100%;
+}
+
+[class*=col-] {
+    float: left;
+    padding: 5px;
+}
+
+#menu {
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+}
+
+
+#menu ul, #menu li {
+    padding: 0;
+    margin: 0;
+}
+
+#menu li {
+    position: relative;
+    float: left;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+#menu li a {
+    position: relative;
+    width: 100px;
+    height: 30px;
+    top: 15px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+section div {
+
+    float: left;
+}
+
+section div {
+    height: 80vh;
+}
+
+.left-contain {
+    width: 15%;
+}
+
+.left-contain a {
+    text-decoration: none;
+    display: block;
+    position: relative;
+    left: 30px;
+    top : 30px
+}
+
+.mid-contain {
+    width: 70%;
+}
+
+.mid-contain h1, h2 {
+    font-family: "Book Antiqua";
+    font-size: 150%;
+}
+
+.right-contain {
+    background: #CDCDCD;
+    width: 15%;
+    text-align: center;
+}
+
+
+
+footer {
+    height: 10vh;
+    padding: 0;
+    margin: 0;
+    background-color: #000000;
+    border: 1px solid #CDCDCD;
+    clear: both;
+}
+
+footer p {
+    position: relative;
+    top: 3px;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    line-height: 30px;
+    background-color: black;
+    color: white;
+}
+
+
+

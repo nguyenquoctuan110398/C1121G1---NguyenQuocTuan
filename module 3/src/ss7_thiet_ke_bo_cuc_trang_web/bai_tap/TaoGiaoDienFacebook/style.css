@@ -1,0 +1,29 @@
+.ri-facebook-circle-fill {
+    font-size: 300%;
+    color: blue;
+}
+
+.ri-search-line, .ri-home-heart-fill, .ri-tv-2-line, .ri-group-fill, .ri-store-2-line{
+    font-size: 200%;
+}
+
+.home {
+    float: left;
+}
+
+.head {
+    position: relative;
+    display: flex;
+    float: left;
+    align-items: center;
+}
+
+.search-box input {
+    outline: none;
+    border: none;
+}
+
+.search-box {
+    width: 250px;
+}
+
