@@ -36,7 +36,7 @@
         </tr>
     </table>
     <br>
-    
+
     <input type="submit" id="submit" value="Calculator" style="text-align: center">
 
 </form>
