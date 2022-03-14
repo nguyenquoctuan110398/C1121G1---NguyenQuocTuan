@@ -13,4 +13,6 @@ public interface IProductRepository {
     Product findById(Integer id);
 
     void update(Integer id, String name, Double price, String description, String manufacturer);
+
+    void remove(Integer id);
 }

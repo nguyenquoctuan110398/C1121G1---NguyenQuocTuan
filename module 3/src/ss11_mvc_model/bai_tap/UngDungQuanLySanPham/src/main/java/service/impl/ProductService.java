@@ -33,6 +33,11 @@ public class ProductService implements IProductService {
         iProductRepository.update(id, name, price, description, manufacturer);
     }
 
+    @Override
+    public void remove(Integer id) {
+        iProductRepository.remove(id);
+    }
+
 
 }
 

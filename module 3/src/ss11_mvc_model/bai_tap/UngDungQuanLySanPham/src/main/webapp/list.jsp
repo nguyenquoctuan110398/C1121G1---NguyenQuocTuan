@@ -37,7 +37,10 @@
             <td><c:out value="${product.price}"></c:out></td>
             <td><c:out value="${product.description}"></c:out></td>
             <td><c:out value="${product.manufacturer}"></c:out></td>
-            <td><a href="/products?action=edit&id=${product.id}">Edit</a></td>
+            <td>
+                <a href="/products?action=edit&id=${product.id}">Edit</a>
+                <a href="/products?action=delete&id=${product.id}">Delete</a>
+            </td>
         </tr>
     </c:forEach>
     </tbody>
