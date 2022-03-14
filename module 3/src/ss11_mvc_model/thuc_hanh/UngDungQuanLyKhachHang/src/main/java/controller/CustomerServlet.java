@@ -172,7 +172,7 @@ public class CustomerServlet extends HttpServlet {
             this.customerService.update(id, customer);
             request.setAttribute("customer", customer);
             request.setAttribute("message", "Customer information was updated");
-            dispatcher = request.getRequestDispatcher("/customer/edit.jsp");
+            dispatcher = request.getRequestDispatcher("/customer/list.jsp");
 
             try {
                 dispatcher.forward(request, response);
