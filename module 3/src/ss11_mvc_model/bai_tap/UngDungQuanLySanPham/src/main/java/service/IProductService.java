@@ -15,4 +15,6 @@ public interface IProductService {
     void update(Integer id, String name, Double price, String description, String manufacturer);
 
     void remove(Integer id);
+
+    List<Product> searchByName(String name);
 }

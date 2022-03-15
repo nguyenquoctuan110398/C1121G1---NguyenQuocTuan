@@ -5,10 +5,7 @@ import repository.IProductRepository;
 import repository.impl.ProductRepository;
 import service.IProductService;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
 
 public class ProductService implements IProductService {
     private IProductRepository iProductRepository = new ProductRepository();
@@ -36,6 +33,17 @@ public class ProductService implements IProductService {
     @Override
     public void remove(Integer id) {
         iProductRepository.remove(id);
+    }
+
+    @Override
+    public List<Product> searchByName(String name) {
+        List<Product> productList = new ArrayList<>();
+        for (Product product: iProductRepository.findAll()) {
+            if ((product.getName().toLowerCase()).contains((name).toLowerCase())){
+                productList.add(product);
+            }
+        }
+        return productList;
     }
 
 

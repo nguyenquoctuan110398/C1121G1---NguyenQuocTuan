@@ -16,7 +16,11 @@
 <body>
 
 <button><a href="products?action=create">Create Product</a></button>
-
+<form method="get">
+    <input type="hidden" name="action" value="search">
+    <input type="text" name="searchByName" placeholder="search">
+    <button type="submit" id="submit">Search</button>
+</form>
 <table class="table">
     <thead>
     <tr>

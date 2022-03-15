@@ -36,9 +36,26 @@ public class ProductControllerServlet extends HttpServlet {
             case "delete":
                 showDeleteProduct(request, response);
                 break;
+            case "search":
+                searchProduct(request, response);
             default:
                 showList(request, response);
                 break;
+        }
+    }
+
+    private void searchProduct(HttpServletRequest request, HttpServletResponse response) {
+        String name =request.getParameter("searchByName");
+
+        List<Product> productList = iProductService.searchByName(name);
+
+        request.setAttribute("listOfProductFound", productList);
+        try {
+            request.getRequestDispatcher("search.jsp").forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 
