@@ -32,7 +32,7 @@
     <button type="submit">Sort by name</button>
 </form>
 </div>
-</div>
+
 <div align="center">
     <table border="1" cellpadding="5">
         <caption><h2>List of Users</h2></caption>
