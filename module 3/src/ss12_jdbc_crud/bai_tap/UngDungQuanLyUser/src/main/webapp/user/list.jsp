@@ -18,10 +18,25 @@
     <h2>
         <a href="/users?action=create">Add New User</a>
     </h2>
+    <form method="get">
+        <input type="hidden" name="action" value="search">
+        <input type="text" name="searchByCountry" placeholder="Search by country">
+        <button type="submit" id="submit">Search</button>
+    </form>
+
+
 </center>
+<div align="center">
+<form method="get">
+    <input type="hidden" name="action" value="sort">
+    <button type="submit">Sort by name</button>
+</form>
+</div>
+</div>
 <div align="center">
     <table border="1" cellpadding="5">
         <caption><h2>List of Users</h2></caption>
+
         <tr>
             <th>ID</th>
             <th>Name</th>
@@ -29,6 +44,8 @@
             <th>Country</th>
             <th>Actions</th>
         </tr>
+
+
         <c:forEach var="user" items="${users}">
             <tr>
                 <td><c:out value="${user.id}"/></td>
@@ -42,6 +59,7 @@
             </tr>
         </c:forEach>
     </table>
+
 </div>
 </body>
 </html>

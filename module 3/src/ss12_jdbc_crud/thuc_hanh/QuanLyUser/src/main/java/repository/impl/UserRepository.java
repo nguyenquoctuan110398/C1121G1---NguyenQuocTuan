@@ -59,7 +59,7 @@ public class UserRepository implements IUserRepository {
         // Step 1: Establishing a Connection
         try (Connection connection = getConnection();
              // Step 2:Create a statement using connection object
-             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID);) {
+             PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID)) {
             preparedStatement.setInt(1, id);
             System.out.println(preparedStatement);
             // Step 3: Execute the query or update query
@@ -106,11 +106,11 @@ public class UserRepository implements IUserRepository {
     }
 
 
-
     @Override
     public boolean deleteUser(Integer id) throws SQLException {
         boolean rowDeleted;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(DELETE_USERS_SQL);) {
             statement.setInt(1, id);
             rowDeleted = statement.executeUpdate() > 0;
         }
@@ -120,7 +120,8 @@ public class UserRepository implements IUserRepository {
     @Override
     public boolean updateUser(User user) throws SQLException {
         boolean rowUpdated;
-        try (Connection connection = getConnection(); PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
+        try (Connection connection = getConnection();
+             PreparedStatement statement = connection.prepareStatement(UPDATE_USERS_SQL);) {
             statement.setString(1, user.getName());
             statement.setString(2, user.getEmail());
             statement.setString(3, user.getCountry());

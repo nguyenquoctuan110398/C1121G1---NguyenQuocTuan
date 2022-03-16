@@ -25,4 +25,25 @@ public class UserService implements IUserService {
     public User findById(Integer id) {
         return iUserRepository.findById(id);
     }
+
+    @Override
+    public boolean update(User user) {
+        return iUserRepository.update(user);
+    }
+
+    @Override
+    public boolean deleteUser(Integer id) {
+        return iUserRepository.deleteUser(id);
+    }
+
+    @Override
+    public List<User> searchByCountry(String countrySearch) {
+        return iUserRepository.searchByCountry(countrySearch);
+
+    }
+
+    @Override
+    public List<User> sortByName() {
+        return iUserRepository.sortByName();
+    }
 }
