@@ -40,10 +40,22 @@ public class UserServlet extends HttpServlet {
             case "sort":
                 sortByName(request, response);
                 break;
+            case "permision":
+                addUserPermision(request, response);
+                break;
             default:
                 showListUser(request, response);
                 break;
         }
+    }
+
+    private void addUserPermision(HttpServletRequest request, HttpServletResponse response) {
+        User user = new User("quan", "quan.nguyen@codegym.vn", "vn");
+
+        int[] permision = {1, 2, 4};
+
+        iUserService.addUserTransaction(user, permision);
+
     }
 
     private void sortByName(HttpServletRequest request, HttpServletResponse response) {

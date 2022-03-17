@@ -18,4 +18,6 @@ public interface IUserService {
     List<User> searchByCountry(String countrySearch);
 
     List<User> sortByName();
+
+    void addUserTransaction(User user, int[] permision);
 }

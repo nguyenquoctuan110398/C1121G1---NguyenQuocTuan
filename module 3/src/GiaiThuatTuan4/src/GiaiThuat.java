@@ -10,7 +10,7 @@ public class GiaiThuat {
             n = Integer.parseInt(scanner.nextLine());
         } while (!((n % 2) == 0));
 
-        for (int i = 1; i <= n; i++) {
+        for (int i = 1; i < n; i++) {
             if (i <= (n / 2)) {
                 for (int j = i; j <= n - i; j++) {
 
