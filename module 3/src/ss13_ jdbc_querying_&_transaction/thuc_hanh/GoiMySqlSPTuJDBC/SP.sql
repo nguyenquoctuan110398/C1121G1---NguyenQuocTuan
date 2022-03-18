@@ -1,3 +1,4 @@
+use demo;
 delimiter $$
 create procedure get_user_by_id(in user_id int)
 begin
