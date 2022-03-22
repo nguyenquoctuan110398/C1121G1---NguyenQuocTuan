@@ -163,7 +163,7 @@ public class UserServlet extends HttpServlet {
         }
     }
 
-    private void updateUser(HttpServletRequest request, HttpServletResponse response) {
+    private void    updateUser(HttpServletRequest request, HttpServletResponse response) {
         Integer id = Integer.valueOf(request.getParameter("id"));
         String name = request.getParameter("name");
         String email = request.getParameter("email");

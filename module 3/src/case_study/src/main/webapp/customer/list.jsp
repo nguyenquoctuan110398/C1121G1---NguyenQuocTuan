@@ -17,16 +17,58 @@
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 </head>
 <body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+        <a class="navbar-brand" href="/home">Furama</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+                aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-end" id="navbarsExampleDefault">
+            <ul class="navbar-nav m-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Employee</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/customers">Customer</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/services">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contract</a>
+                </li>
+            </ul>
+
+            <form method="get" class="form-inline my-2 my-lg-0">
+                <div class="input-group input-group-sm">
+                    <input type="hidden" name="action" value="search">
+                    <input name="searchByName" type="text" class="form-control" aria-label="Small"
+                           aria-describedby="inputGroup-sizing-sm" placeholder="Search...">
+                    <div class="input-group-append">
+                        <button type="submit" class="btn btn-secondary btn-number">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</nav>
 <center>
     <h1>Customer Management</h1>
     <h2>
         <a href="/customers?action=create">Add New Customer</a>
     </h2>
-    <%--    <form method="get">--%>
-    <%--        <input type="hidden" name="action" value="search">--%>
-    <%--        <input type="text" name="searchByCountry" placeholder="Search by country">--%>
-    <%--        <button type="submit" id="submit">Search</button>--%>
-    <%--    </form>--%>
+<%--        <form method="get">--%>
+<%--            <input type="hidden" name="action" value="search">--%>
+<%--            <input type="text" name="searchByName" placeholder="Search by name">--%>
+<%--            <button type="submit" id="submit">Search</button>--%>
+<%--        </form>--%>
 
 
 </center>
@@ -75,10 +117,10 @@
                 <td><c:out value="${customer.address}"/></td>
                 <td><c:out value="${customer.customerTypeName}"/></td>
                 <td>
-                    <a href="/users?action=edit&id=${customer.id}">Edit</a>
+                    <a href="/customers?action=edit&id=${customer.id}">Edit</a>
                 </td>
                 <td>
-                    <a class="btn btn-primary" data-toggle="modal" data-target="#exampleModal"
+                    <a data-toggle="modal" data-target="#exampleModal"
                        href="/customers?action=delete&id=${customer.id}" onclick="getID(${customer.id})">
                         Delete
                     </a>

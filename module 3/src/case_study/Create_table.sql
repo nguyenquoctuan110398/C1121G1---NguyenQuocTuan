@@ -130,6 +130,11 @@ service_type_name varchar(45),
 primary key(service_type_id)
 );
 
+insert into service_type(service_type_name)
+values	('Villa'),
+		('House'),
+		('Room');
+
 -- Tạo và thêm dữ liệu vào bảng kieu_thue
 create table rent_type(
 rent_type_id int not null auto_increment,
@@ -137,6 +142,12 @@ rent_type_name varchar(45),
 rent_type_cost double,
 primary key(rent_type_id)
 );
+
+insert into rent_type(rent_type_name)
+values	('year'),
+		('month'),
+        ('day'),
+        ('hour');
 
 -- Tạo và thêm dữ liệu vào bảng dich_vu
 create table service(
@@ -155,6 +166,7 @@ primary key(service_id),
 foreign key(rent_type_id) references rent_type(rent_type_id),
 foreign key(service_type_id) references service_type(service_type_id)
 );
+
 
 -- Tạo và thêm dữ liệu vào bảng dich_vu_di_kem
 create table attach_service(

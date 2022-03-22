@@ -1,8 +1,8 @@
 package controller.customer;
 
-import model.Customer.Customer;
-import model.Customer.CustomerDTO;
-import model.Customer.CustomerType;
+import model.customer.Customer;
+import model.customer.CustomerDTO;
+import model.customer.CustomerType;
 import service.customer.ICustomerService;
 import service.customer.ICustomerTypeService;
 import service.customer.impl.CustomerService;
@@ -41,7 +41,11 @@ public class CustomerServlet extends HttpServlet {
             case "edit":
                 showEditCustomer(request, response);
                 break;
-            case "delete":
+//            case "delete":
+//                deleteCustomer(request, response);
+//                break;
+            case "search":
+                searchCustomer(request, response);
                 break;
             default:
                 showListCustomer(request, response);
@@ -67,8 +71,55 @@ public class CustomerServlet extends HttpServlet {
 
     private void showEditCustomer(HttpServletRequest request, HttpServletResponse response) {
         Integer id = Integer.valueOf(request.getParameter("id"));
+        List<CustomerType> customerTypeList = new ArrayList<>();
+        customerTypeList = iCustomerTypeService.findAll();
 
         Customer customer = iCustomerService.findById(id);
+
+        request.setAttribute("customerTypes", customerTypeList);
+        request.setAttribute("customerToEdit", customer);
+        try {
+            request.getRequestDispatcher("customer/edit.jsp").forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void deleteCustomer(HttpServletRequest request, HttpServletResponse response) {
+        Integer id = Integer.valueOf(request.getParameter("idDelete"));
+
+        iCustomerService.deleteCustomerById(id);
+
+        List<CustomerDTO> customerDTOList = new ArrayList<>();
+        customerDTOList = iCustomerService.findAll();
+
+        request.setAttribute("customers", customerDTOList);
+
+        try {
+            request.getRequestDispatcher("customer/list.jsp").forward(request,response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void searchCustomer(HttpServletRequest request, HttpServletResponse response) {
+        String nameSearch= request.getParameter("searchByName");
+
+        List<CustomerDTO> customerDTOList = iCustomerService.searchByName(nameSearch);
+
+        request.setAttribute("customers", customerDTOList);
+
+        try {
+            request.getRequestDispatcher("customer/list.jsp").forward(request,response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 
     private void showListCustomer(HttpServletRequest request, HttpServletResponse response) {
@@ -101,9 +152,11 @@ public class CustomerServlet extends HttpServlet {
             case "create":
                 createCustomer(request, response);
                 break;
-            case "update":
+            case "edit":
+                updateCustomer(request, response);
                 break;
             case "delete":
+                deleteCustomer(request, response);
                 break;
             default:
                 iCustomerService.findAll();
@@ -112,6 +165,10 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void createCustomer(HttpServletRequest request, HttpServletResponse response) {
+        List<CustomerType> customerTypeList = new ArrayList<>();
+        customerTypeList = iCustomerTypeService.findAll();
+
+        request.setAttribute("customer_type", customerTypeList);
 //        Integer id = Integer.valueOf(request.getParameter("customer_id"));
         String name = request.getParameter("customer_name");
         String birthday = request.getParameter("customer_birthday");
@@ -130,6 +187,35 @@ public class CustomerServlet extends HttpServlet {
 
         try {
             request.getRequestDispatcher("customer/create.jsp").forward(request, response);
+        } catch (ServletException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+
+    private void updateCustomer(HttpServletRequest request, HttpServletResponse response) {
+        Integer id = Integer.valueOf(request.getParameter("id"));
+        List<CustomerType> customerTypeList = new ArrayList<>();
+        customerTypeList = iCustomerTypeService.findAll();
+
+        String name = request.getParameter("customer_name");
+        String birthday = request.getParameter("customer_birthday");
+        Integer gender = Integer.valueOf(request.getParameter("customer_gender"));
+        String idCard = request.getParameter("customer_id_card");
+        String phone = request.getParameter("customer_phone");
+        String email = request.getParameter("customer_email");
+        String address = request.getParameter("customer_address");
+        Integer customerTypeId = Integer.valueOf(request.getParameter("customer_type_id"));
+
+        Customer customer = new Customer(id, name, birthday, gender, idCard,
+                phone, email, address, customerTypeId);
+
+        this.iCustomerService.update(customer);
+        request.setAttribute("message", "Customer updated");
+
+        try {
+            request.getRequestDispatcher("customer/edit.jsp").forward(request,response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {

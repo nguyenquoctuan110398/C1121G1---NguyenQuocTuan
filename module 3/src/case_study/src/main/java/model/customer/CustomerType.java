@@ -1,4 +1,4 @@
-package model.Customer;
+package model.customer;
 
 public class CustomerType {
     private Integer id;

@@ -1,14 +1,12 @@
 package service.customer.impl;
 
 
-import model.Customer.Customer;
-import model.Customer.CustomerDTO;
+import model.customer.Customer;
+import model.customer.CustomerDTO;
 import repository.customer.ICustomerRepository;
 import repository.customer.impl.CustomerRepository;
 import service.customer.ICustomerService;
 
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 import java.util.List;
 
 public class CustomerService implements ICustomerService {
@@ -28,5 +26,20 @@ public class CustomerService implements ICustomerService {
     @Override
     public Customer findById(Integer id) {
         return iCustomerRepository.findById(id);
+    }
+
+    @Override
+    public boolean update(Customer customer) {
+        return iCustomerRepository.update(customer);
+    }
+
+    @Override
+    public List<CustomerDTO> searchByName(String nameSearch) {
+        return iCustomerRepository.searchByName(nameSearch);
+    }
+
+    @Override
+    public boolean deleteCustomerById(Integer id) {
+        return iCustomerRepository.deleteCustomerById(id);
     }
 }

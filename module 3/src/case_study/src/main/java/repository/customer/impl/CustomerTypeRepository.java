@@ -1,6 +1,6 @@
 package repository.customer.impl;
 
-import model.Customer.CustomerType;
+import model.customer.CustomerType;
 import repository.BaseRepository;
 import repository.customer.ICustomerTypeRepository;
 

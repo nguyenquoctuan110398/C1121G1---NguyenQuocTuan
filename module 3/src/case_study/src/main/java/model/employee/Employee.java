@@ -1,6 +1,8 @@
-package model;
+package model.employee;
 
-public class Employee extends Person{
+import model.Person;
+
+public class Employee extends Person {
     private Double salary;
     private Integer positionId;
     private Integer educationDegreeId;

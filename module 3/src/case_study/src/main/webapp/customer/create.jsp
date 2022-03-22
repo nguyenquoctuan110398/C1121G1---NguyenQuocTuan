@@ -45,7 +45,13 @@
 
         <tr>
             <td><label for="customer_gender">Gender: </label></td>
-            <td><input type="text" name="customer_gender" id="customer_gender"></td>
+<%--            <td><input type="text" name="customer_gender" id="customer_gender"></td>--%>
+            <td>
+                <select name="customer_gender" id="customer_gender">
+                    <option value="0">Nữ</option>
+                    <option value="1">Nam</option>
+                </select>
+            </td>
         </tr>
 
         <tr>

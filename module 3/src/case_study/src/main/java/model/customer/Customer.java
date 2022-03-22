@@ -1,4 +1,4 @@
-package model.Customer;
+package model.customer;
 
 import model.Person;
 
