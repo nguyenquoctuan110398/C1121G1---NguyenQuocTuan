@@ -2,6 +2,7 @@ package model;
 
 public abstract class Person {
     private Integer id;
+    private String code;
     private String name;
     private String birthday;
     private String idCard;
@@ -12,8 +13,11 @@ public abstract class Person {
     public Person() {
     }
 
-    public Person(String name, String birthday,
-                  String idCard, String phone, String email, String address) {
+    public Person(String code) {
+        this.code = code;
+    }
+
+    public Person(String name, String birthday, String idCard, String phone, String email, String address) {
         this.name = name;
         this.birthday = birthday;
         this.idCard = idCard;
@@ -25,6 +29,29 @@ public abstract class Person {
     public Person(Integer id, String name, String birthday,
                   String idCard, String phone, String email, String address) {
         this.id = id;
+        this.name = name;
+        this.birthday = birthday;
+        this.idCard = idCard;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+    }
+
+    public Person(Integer id, String code, String name, String birthday,
+                  String idCard, String phone, String email, String address) {
+        this.id = id;
+        this.code = code;
+        this.name = name;
+        this.birthday = birthday;
+        this.idCard = idCard;
+        this.phone = phone;
+        this.email = email;
+        this.address = address;
+    }
+
+    public Person(String code, String name, String birthday,
+                  String idCard, String phone, String email, String address) {
+        this.code = code;
         this.name = name;
         this.birthday = birthday;
         this.idCard = idCard;
@@ -87,5 +114,13 @@ public abstract class Person {
 
     public void setAddress(String address) {
         this.address = address;
+    }
+
+    public String getCode() {
+        return code;
+    }
+
+    public void setCode(String code) {
+        this.code = code;
     }
 }

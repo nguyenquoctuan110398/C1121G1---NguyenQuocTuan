@@ -9,21 +9,25 @@ public class Customer extends Person {
     public Customer() {
     }
 
+    public Customer(String code){
+        super(code);
+    }
+
     public Customer(Integer gender, Integer customerTypeId) {
         this.gender = gender;
         this.customerTypeId = customerTypeId;
     }
 
-    public Customer(String name, String birthday, Integer gender, String idCard,
+    public Customer(String code, String name, String birthday, Integer gender, String idCard,
                     String phone, String email, String address, Integer customerTypeId) {
-        super(name, birthday, idCard, phone, email, address);
+        super(code, name, birthday, idCard, phone, email, address);
         this.gender = gender;
         this.customerTypeId = customerTypeId;
     }
 
-    public Customer(Integer id, String name, String birthday, Integer gender, String idCard,
+    public Customer(Integer id, String code, String name, String birthday, Integer gender, String idCard,
                     String phone, String email, String address, Integer customerTypeId) {
-        super(id, name, birthday, idCard, phone, email, address);
+        super(id, code, name, birthday, idCard, phone, email, address);
         this.gender = gender;
         this.customerTypeId = customerTypeId;
     }

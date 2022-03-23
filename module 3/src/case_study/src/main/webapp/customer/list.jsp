@@ -86,6 +86,7 @@
         <thead>
         <tr>
             <th>ID</th>
+            <th>Mã khách hàng</th>
             <th>Họ tên</th>
             <th>Ngày sinh</th>
             <th>Giới tính</th>
@@ -103,6 +104,7 @@
         <c:forEach var="customer" items="${customers}">
             <tr>
                 <td><c:out value="${customer.id}"/></td>
+                <td><c:out value="${customer.code}"/></td>
                 <td><c:out value="${customer.name}"/></td>
                 <td><c:out value="${customer.birthday}"/></td>
                 <td>

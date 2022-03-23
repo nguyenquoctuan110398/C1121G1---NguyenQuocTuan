@@ -5,30 +5,45 @@ import model.Person;
 public class Employee extends Person {
     private Double salary;
     private Integer positionId;
-    private Integer educationDegreeId;
-    private Integer divisionId;
+    private Integer educationId;
+    private  Integer divisionId;
     private String username;
 
     public Employee() {
     }
 
-    public Employee(Double salary, Integer positionId, Integer educationDegreeId,
-                    Integer divisionId, String username) {
+    public Employee(Integer id, String name, String birthday, String idCard, Double salary, String phone,
+                    String email, String address, Integer positionId, Integer educationId, Integer divisionId) {
+        super(id, name, birthday, idCard, phone, email, address);
         this.salary = salary;
         this.positionId = positionId;
-        this.educationDegreeId = educationDegreeId;
+        this.educationId = educationId;
+        this.divisionId = divisionId;
+    }
+
+    public Employee(String name, String birthday, String idCard, Double salary, String phone, String email,
+                    String address, Integer positionId, Integer educationId, Integer divisionId,String username) {
+        super(name, birthday, idCard, phone, email, address);
+        this.salary = salary;
+        this.positionId = positionId;
+        this.educationId = educationId;
+        this.divisionId = divisionId;
+        this.username = username;
+    }
+    public Employee(Integer id, String name, String birthday, String idCard, Double salary, String phone, String email, String address, Integer positionId, Integer educationId, Integer divisionId,String username) {
+        super(id, name, birthday, idCard, phone, email, address);
+        this.salary = salary;
+        this.positionId = positionId;
+        this.educationId = educationId;
         this.divisionId = divisionId;
         this.username = username;
     }
 
-    public Employee(Integer id, String name, String birthday, String idCard, Double salary, String phone,
-                    String email, String address, Integer positionId, Integer educationDegreeId,
-                    Integer divisionId, String username) {
-        super(id, name, birthday, idCard, phone, email, address);
-        this.salary = salary;
-        this.positionId = positionId;
-        this.educationDegreeId = educationDegreeId;
-        this.divisionId = divisionId;
+    public String getUsername() {
+        return username;
+    }
+
+    public void setUsername(String username) {
         this.username = username;
     }
 
@@ -48,12 +63,12 @@ public class Employee extends Person {
         this.positionId = positionId;
     }
 
-    public Integer getEducationDegreeId() {
-        return educationDegreeId;
+    public Integer getEducationId() {
+        return educationId;
     }
 
-    public void setEducationDegreeId(Integer educationDegreeId) {
-        this.educationDegreeId = educationDegreeId;
+    public void setEducationId(Integer educationId) {
+        this.educationId = educationId;
     }
 
     public Integer getDivisionId() {
@@ -62,13 +77,5 @@ public class Employee extends Person {
 
     public void setDivisionId(Integer divisionId) {
         this.divisionId = divisionId;
-    }
-
-    public String getUsername() {
-        return username;
-    }
-
-    public void setUsername(String username) {
-        this.username = username;
     }
 }

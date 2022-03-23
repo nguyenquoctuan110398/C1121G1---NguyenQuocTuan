@@ -15,36 +15,35 @@ import java.util.List;
 
 public class CustomerRepository implements ICustomerRepository {
 
-
 //    private ICustomerTypeService iCustomerTypeService = new CustomerTypeService();
 
 
     private BaseRepository baseRepository = new BaseRepository();
 
     private static final String SELECT_CUSTOMERS =
-            "select customer_id, customer_name, customer_birthday, customer_gender, customer_id_card, " +
+            "select customer_id, customer_code, customer_name, customer_birthday, customer_gender, customer_id_card, " +
                     "customer_phone, customer_email, customer_address, customer_type_name " +
                     "from customer " +
                     "inner join customer_type on customer.customer_type_id = customer_type.customer_type_id " +
                     "order by customer_id;";
 
     private static final String INSERT_CUSTOMER =
-            "insert into customer(customer_name, customer_birthday, customer_gender, customer_id_card, " +
+            "insert into customer(customer_code, customer_name, customer_birthday, customer_gender, customer_id_card, " +
                     "customer_phone, customer_email, customer_address, customer_type_id) " +
-                    "value(?, ?, ?, ?, ?, ?, ?, ?);";
+                    "value(?, ?, ?, ?, ?, ?, ?, ?, ?);";
 
     private static final String SELECT_CUSTOMER_BY_ID =
-            "select customer_name, customer_birthday, customer_gender, customer_id_card, " +
+            "select customer_code, customer_name, customer_birthday, customer_gender, customer_id_card, " +
                     "customer_phone, customer_email, customer_address, customer_type_id " +
                     "from customer where customer_id=?;";
 
     private static final String UPDATE_CUSTOMER_SQL =
-            "update customer set customer_name = ?, customer_birthday = ?, customer_gender=?, " +
+            "update customer set customer_code, customer_name = ?, customer_birthday = ?, customer_gender=?, " +
                     "customer_id_card=?, customer_phone=?, customer_email=?, " +
                     "customer_address=?, customer_type_id=? where customer_id=?;";
 
     private static final String SEARCH_CUSTOMER_BY_NAME =
-            "select customer_id, customer_name, customer_birthday, customer_gender, customer_id_card, " +
+            "select customer_id, customer_code, customer_name, customer_birthday, customer_gender, customer_id_card, " +
                     "customer_phone, customer_email, customer_address, customer_type_name " +
                     "from customer " +
                     "inner join customer_type on customer.customer_type_id = customer_type.customer_type_id " +
@@ -52,6 +51,9 @@ public class CustomerRepository implements ICustomerRepository {
 
     private static final String DELETE_CUSTOMER_BY_ID =
             "delete from customer where customer_id=?";
+
+    private static final String SELECT_CUSTOMERS_BY_CODE =
+            "select customer_code where customer_code = ?";
 
     @Override
     public List<CustomerDTO> findAll() {
@@ -66,6 +68,7 @@ public class CustomerRepository implements ICustomerRepository {
 
             while (resultSet.next()) {
                 Integer id = resultSet.getInt("customer_id");
+                String code = resultSet.getString("customer_code");
                 String name = resultSet.getString("customer_name");
                 String birthday = resultSet.getString("customer_birthday");
                 Integer gender = resultSet.getInt("customer_gender");
@@ -75,7 +78,7 @@ public class CustomerRepository implements ICustomerRepository {
                 String address = resultSet.getString("customer_address");
                 String customerTypeName = resultSet.getString("customer_type_name");
 
-                CustomerDTO customerDTO = new CustomerDTO(id, name, birthday, gender, idCard,
+                CustomerDTO customerDTO = new CustomerDTO(id, code, name, birthday, gender, idCard,
                         phone, email, address, customerTypeName);
 
                 customerDTOList.add(customerDTO);
@@ -100,14 +103,15 @@ public class CustomerRepository implements ICustomerRepository {
 
             PreparedStatement preparedStatement = connection.prepareStatement(INSERT_CUSTOMER);
 
-            preparedStatement.setString(1, customer.getName());
-            preparedStatement.setString(2, customer.getBirthday());
-            preparedStatement.setInt(3, customer.getGender());
-            preparedStatement.setString(4, customer.getIdCard());
-            preparedStatement.setString(5, customer.getPhone());
-            preparedStatement.setString(6, customer.getEmail());
-            preparedStatement.setString(7, customer.getAddress());
-            preparedStatement.setInt(8, customer.getCustomerTypeId());
+            preparedStatement.setString(1, customer.getCode());
+            preparedStatement.setString(2, customer.getName());
+            preparedStatement.setString(3, customer.getBirthday());
+            preparedStatement.setInt(4, customer.getGender());
+            preparedStatement.setString(5, customer.getIdCard());
+            preparedStatement.setString(6, customer.getPhone());
+            preparedStatement.setString(7, customer.getEmail());
+            preparedStatement.setString(8, customer.getAddress());
+            preparedStatement.setInt(9, customer.getCustomerTypeId());
 
             preparedStatement.executeUpdate();
         } catch (SQLException e) {
@@ -139,6 +143,7 @@ public class CustomerRepository implements ICustomerRepository {
             while (resultSet.next()) {
                 //customer_name, customer_birthday, customer_gender, customer_id_card, " +
                 //"customer_phone, customer_email, customer_address, customer_type_id)
+                String code = resultSet.getString("customer_code");
                 String name = resultSet.getString("customer_name");
                 String birthday = resultSet.getString("customer_birthday");
                 Integer gender = resultSet.getInt("customer_gender");
@@ -148,7 +153,7 @@ public class CustomerRepository implements ICustomerRepository {
                 String address = resultSet.getString("customer_address");
                 Integer customerTypeId = resultSet.getInt("customer_type_id");
 
-                customer = new Customer(id, name, birthday, gender, idCard, phone,
+                customer = new Customer(id, code, name, birthday, gender, idCard, phone,
                         email, address, customerTypeId);
             }
         } catch (SQLException e) {
@@ -216,6 +221,7 @@ public class CustomerRepository implements ICustomerRepository {
             // customer_phone, customer_email, customer_address, customer_type_name
             while (resultSet.next()) {
                 Integer id = resultSet.getInt("customer_id");
+                String code = resultSet.getString("customer_code");
                 String name = resultSet.getString("customer_name");
                 String birthday = resultSet.getString("customer_birthday");
                 Integer gender = Integer.valueOf(resultSet.getString("customer_gender"));
@@ -225,7 +231,7 @@ public class CustomerRepository implements ICustomerRepository {
                 String address = resultSet.getString("customer_address");
                 String customerTypeName = resultSet.getString("customer_type_name");
 
-                CustomerDTO customerDTO = new CustomerDTO(id, name, birthday, gender, idCard, phone,
+                CustomerDTO customerDTO = new CustomerDTO(id, code, name, birthday, gender, idCard, phone,
                         email, address, customerTypeName);
 
                 customerDTOList.add(customerDTO);
@@ -258,4 +264,40 @@ public class CustomerRepository implements ICustomerRepository {
 
         return rowDelete;
     }
+
+    @Override
+    public boolean checkCustomerCodeExist(String code) {
+        boolean check = false;
+
+        List<CustomerDTO> customerList = this.findAll();
+
+        for (CustomerDTO customer:customerList) {
+            if (code.equals(customer.getCode())){
+                check = true;
+                break;
+            }
+        }
+        return check;
+    }
+
+//    @Override
+//    public List<Customer> checkCustomerByCode(String code) {
+//        List<Customer> customerListByCode = new ArrayList<>();
+//
+//        try(Connection connection = this.baseRepository.getConnection();
+//            PreparedStatement preparedStatement = connection.prepareStatement(SELECT_CUSTOMERS_BY_CODE)){
+//            preparedStatement.setString(1, code);
+//            ResultSet resultSet = preparedStatement.executeQuery();
+//
+//            while (resultSet.next()){
+//                Customer customer = new Customer(code);
+//
+//                customerListByCode.add(customer);
+//            }
+//
+//        } catch (SQLException e) {
+//            e.printStackTrace();
+//        }
+//        return null;
+//    }
 }

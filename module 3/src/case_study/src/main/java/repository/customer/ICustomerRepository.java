@@ -17,4 +17,8 @@ public interface ICustomerRepository {
     List<CustomerDTO> searchByName(String nameSearch);
 
     boolean deleteCustomerById(Integer id);
+
+    boolean checkCustomerCodeExist(String code);
+
+//    List<Customer> checkCustomerByCode(String code);
 }

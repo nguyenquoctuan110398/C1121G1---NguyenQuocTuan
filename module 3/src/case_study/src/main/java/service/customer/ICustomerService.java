@@ -4,11 +4,12 @@ import model.customer.Customer;
 import model.customer.CustomerDTO;
 
 import java.util.List;
+import java.util.Map;
 
 public interface ICustomerService {
     List<CustomerDTO> findAll();
 
-    void save(Customer customer);
+    Map<String, String> save(Customer customer);
 
     Customer findById(Integer id);
 
@@ -17,4 +18,6 @@ public interface ICustomerService {
     List<CustomerDTO> searchByName(String nameSearch);
 
     boolean deleteCustomerById(Integer id);
+
+//    List<Customer> checkCustomerByCode(String code);
 }

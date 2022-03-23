@@ -14,6 +14,7 @@ import javax.servlet.annotation.*;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 @WebServlet(name = "CustomerServlet", value = "/customers")
 public class CustomerServlet extends HttpServlet {
@@ -98,7 +99,7 @@ public class CustomerServlet extends HttpServlet {
         request.setAttribute("customers", customerDTOList);
 
         try {
-            request.getRequestDispatcher("customer/list.jsp").forward(request,response);
+            request.getRequestDispatcher("customer/list.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -107,14 +108,14 @@ public class CustomerServlet extends HttpServlet {
     }
 
     private void searchCustomer(HttpServletRequest request, HttpServletResponse response) {
-        String nameSearch= request.getParameter("searchByName");
+        String nameSearch = request.getParameter("searchByName");
 
         List<CustomerDTO> customerDTOList = iCustomerService.searchByName(nameSearch);
 
         request.setAttribute("customers", customerDTOList);
 
         try {
-            request.getRequestDispatcher("customer/list.jsp").forward(request,response);
+            request.getRequestDispatcher("customer/list.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {
@@ -169,7 +170,8 @@ public class CustomerServlet extends HttpServlet {
         customerTypeList = iCustomerTypeService.findAll();
 
         request.setAttribute("customer_type", customerTypeList);
-//        Integer id = Integer.valueOf(request.getParameter("customer_id"));
+
+        String code = request.getParameter("customer_code");
         String name = request.getParameter("customer_name");
         String birthday = request.getParameter("customer_birthday");
         Integer gender = Integer.valueOf(request.getParameter("customer_gender"));
@@ -179,12 +181,15 @@ public class CustomerServlet extends HttpServlet {
         String address = request.getParameter("customer_address");
         Integer customerTypeId = Integer.valueOf(request.getParameter("customer_type_id"));
 
-        Customer customer = new Customer(name, birthday, gender, idCard, phone,
+        Customer customer = new Customer(code, name, birthday, gender, idCard, phone,
                 email, address, customerTypeId);
-        iCustomerService.save(customer);
+        Map<String, String> customerMap = iCustomerService.save(customer);
 
-        request.setAttribute("message", "New customer was created");
-
+        if (customerMap.isEmpty()) {
+            request.setAttribute("message", "New customer was created");
+        } else {
+            request.setAttribute("error", customerMap);
+        }
         try {
             request.getRequestDispatcher("customer/create.jsp").forward(request, response);
         } catch (ServletException e) {
@@ -199,6 +204,7 @@ public class CustomerServlet extends HttpServlet {
         List<CustomerType> customerTypeList = new ArrayList<>();
         customerTypeList = iCustomerTypeService.findAll();
 
+        String code = request.getParameter("customer_code");
         String name = request.getParameter("customer_name");
         String birthday = request.getParameter("customer_birthday");
         Integer gender = Integer.valueOf(request.getParameter("customer_gender"));
@@ -208,14 +214,14 @@ public class CustomerServlet extends HttpServlet {
         String address = request.getParameter("customer_address");
         Integer customerTypeId = Integer.valueOf(request.getParameter("customer_type_id"));
 
-        Customer customer = new Customer(id, name, birthday, gender, idCard,
+        Customer customer = new Customer(id, code, name, birthday, gender, idCard,
                 phone, email, address, customerTypeId);
 
         this.iCustomerService.update(customer);
         request.setAttribute("message", "Customer updated");
 
         try {
-            request.getRequestDispatcher("customer/edit.jsp").forward(request,response);
+            request.getRequestDispatcher("customer/edit.jsp").forward(request, response);
         } catch (ServletException e) {
             e.printStackTrace();
         } catch (IOException e) {

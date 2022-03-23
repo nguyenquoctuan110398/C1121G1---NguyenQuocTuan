@@ -14,9 +14,9 @@ public class CustomerDTO extends Person {
         this.customerTypeName = customerTypeName;
     }
 
-    public CustomerDTO(Integer id, String name, String birthday, Integer gender, String idCard, String phone,
-                       String email, String address, String customerTypeName) {
-        super(id, name, birthday, idCard, phone, email, address);
+    public CustomerDTO(Integer id, String code, String name, String birthday, Integer gender, String idCard,
+                       String phone, String email, String address, String customerTypeName) {
+        super(id, code, name, birthday, idCard, phone, email, address);
         this.gender = gender;
         this.customerTypeName = customerTypeName;
     }

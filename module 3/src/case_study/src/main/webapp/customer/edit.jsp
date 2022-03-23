@@ -28,6 +28,11 @@
         <legend>Customer information</legend>
         <table>
             <tr>
+                <td><label for="customer_code">Code: </label></td>
+                <td><input type="text" name="customer_code" id="customer_code" value="${customerToEdit.code}"></td>
+            </tr>
+
+            <tr>
                 <td><label for="customer_name">Name: </label></td>
                 <td><input type="text" name="customer_name" id="customer_name" value="${customerToEdit.name}"></td>
             </tr>
